@@ -1,0 +1,75 @@
+.courseWrapper {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.body {
+    padding: 0.5rem;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.title {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.instructors {
+    color: grey;
+    margin: 0.5rem 0;
+}
+
+.rating {
+    display: inline;
+    font-weight: bold;
+    color: rgb(223, 93, 0);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.stars {
+    color: darkorange;
+    font-size: 1rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 700px){
+    .courseWrapper {
+        width: 46%;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    .courseWrapper {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .courseWrapper {
+        width: 22%;
+    }
+}
