@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
 import styles from './Card.module.css'
 
-
 class Card extends Component {
-    
     createCourse(course){
         let instructors = ``;
         course.instructors.forEach((instructor) => {
             instructors += ' ' + instructor['name'] + ',';
         });
         instructors = instructors.slice(0, -1);
-
         return (
             <>
                 <div className={styles.courseWrapper}>
