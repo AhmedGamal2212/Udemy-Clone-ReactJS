@@ -24,6 +24,9 @@ class Card extends Component {
                             </p>
                             <section>
                                 <p className={styles.rating}>{course.rating.toPrecision(2)}</p>
+                                <div className={styles.starsOuter}>
+                                    <div className={styles.starsInner} style={{width:`${course.rating / 5 * 100}%`}}></div>
+                                </div>
                             </section>
                             <p className={styles.price}>
                                 ${course.price}
