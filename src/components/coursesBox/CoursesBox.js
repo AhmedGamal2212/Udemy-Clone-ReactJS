@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import CoursesContainer from '../coursesContainer/CoursesContainer'
 import styles from './CoursesBox.module.css'
 
-class CoursesBox extends Component {
-  render() {
-    return (
-        <section className={styles.wrapper}>
-            <h2 className={styles.title}>{this.props.title}</h2>
-            <p className={styles.description}>{this.props.description}</p>
-            <button className={styles.exploreButton}>Explore Date Science</button>
-            <CoursesContainer courses={this.props.courses}></CoursesContainer>
-        </section>
-    )
-  }
+const CoursesBox = (props) => {
+  return (
+      <section className={styles.wrapper}>
+          <h2 className={styles.title}>{this.props.title}</h2>
+          <p className={styles.description}>{props.description}</p>
+          <button className={styles.exploreButton}>Explore Date Science</button>
+          <CoursesContainer courses={props.courses}></CoursesContainer>
+      </section>
+  );
 }
 
 export default CoursesBox

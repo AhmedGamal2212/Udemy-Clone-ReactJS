@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from './Card.module.css'
 
-class Card extends Component {
-    createCourse(course){
+const Card = ({course}) => {
+
+    const createCourse = (course) => {
         let instructors = ``;
         course.instructors.forEach((instructor) => {
             instructors += ' ' + instructor['name'] + ',';
@@ -36,14 +37,10 @@ class Card extends Component {
                 </div>
             </>
         )
-    }
-
-    render() {
-        console.log(typeof(this.props.course));
-        return (
-            <>{this.createCourse(this.props.course)}</>
-        )
-    }
+    };
+    return (
+        <>{createCourse(course)}</>
+    );
 }
 
 export default Card
