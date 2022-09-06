@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Card.module.css'
 
 const Card = ({course}) => {
-    console.log("hi")
 
     const createCourse = (course) => {
         let instructors = ``;
