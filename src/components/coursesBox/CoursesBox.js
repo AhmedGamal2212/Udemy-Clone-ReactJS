@@ -2,13 +2,13 @@ import React from 'react'
 import CoursesContainer from '../coursesContainer/CoursesContainer'
 import styles from './CoursesBox.module.css'
 
-const CoursesBox = (props) => {
+const CoursesBox = ({title, description, courses}) => {
   return (
       <section className={styles.wrapper}>
-          <h2 className={styles.title}>{props.title}</h2>
-          <p className={styles.description}>{props.description}</p>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.description}>{description}</p>
           <button className={styles.exploreButton}>Explore Date Science</button>
-          <CoursesContainer courses={props.courses}></CoursesContainer>
+          <CoursesContainer courses={courses}></CoursesContainer>
       </section>
   );
 }

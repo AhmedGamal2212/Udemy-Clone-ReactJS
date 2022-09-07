@@ -2,9 +2,7 @@ import React from 'react'
 import styles from './Card.module.css'
 
 const Card = ({course}) => {
-
-    const createCourse = (course) => {
-        let instructors = ``;
+    let instructors = ``;
         course.instructors.forEach((instructor) => {
             instructors += ' ' + instructor['name'] + ',';
         });
@@ -36,13 +34,7 @@ const Card = ({course}) => {
                     </article>
                 </div>
             </>
-        )
-    };
-    return (
-        <>
-            {createCourse(course)}
-        </>
-    );
+        );
 }
 
 export default Card
