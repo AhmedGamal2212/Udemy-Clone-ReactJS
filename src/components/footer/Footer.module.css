@@ -40,16 +40,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .copyRights {
-    padding-bottom: 2.2rem;
-}
-
-@media only screen and (min-width: 285px){
-    .copyRights {
-        padding: 2.2rem 0;
-    }
+    padding-bottom: ;
 }
 
 @media only screen and (min-width: 700px){
@@ -63,5 +58,13 @@
 
     .languageSwitch {
         flex-grow: 1;
+    }
+
+    .logoCopyRights {
+        flex-direction: row;
+    }
+
+    .copyRights {
+        padding: 2rem 0;
     }
 }
