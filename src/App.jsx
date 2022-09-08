@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HomePage from './pages/home/HomePage';
 
 const App = () => {
+
+  
   return (
     <div className="App">
       <HomePage />
