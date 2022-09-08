@@ -11,7 +11,7 @@ const CoursesContainer = ({courses}) => {
     });
     return (
         <section className={styles.container}>
-            {coursesCards}
+            {coursesCards.length ? coursesCards : <p className={styles.emptyCoursesList}>There're no courses to show</p>}
         </section>
     );
 }
