@@ -288,6 +288,13 @@ button i:hover {
 }
 
 @media only screen and (min-width: 500px){
+
+    .courses-section {
+        padding: 3rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .new-to-udemy p:first-child {
         font-size: 2.1rem;
     }

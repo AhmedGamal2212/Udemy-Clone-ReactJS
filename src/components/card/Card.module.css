@@ -94,7 +94,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1200px){
     .courseWrapper {
         width: 22%;
     }
