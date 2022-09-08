@@ -1,8 +1,9 @@
 import React from 'react';
 import '../styles.css'
 
-function Tab({category, htmlValue, checked, setCurrentTab}) {
+function Tab({category, htmlValue, checked, setCurrentTab, setSelectedIndex, idx}) {
     const changeSetion = (tab) => {
+        setSelectedIndex(idx);
         setCurrentTab(tab);
     }
     return ( 

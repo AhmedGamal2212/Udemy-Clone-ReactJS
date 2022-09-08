@@ -5,12 +5,12 @@ import Tabs from '../tabs/Tabs';
 import LoadingSpinner from '../loading-spinner/LoadingSpinner';
 
 function CoursesSection() {
-
     const [coursesData, setCoursesData] = useState({});
     const [fetched, setAsFetched] = useState(false);
     const [currentTab, setCurrentTab] = useState('python_res');
 
     useEffect(() => {
+        console.log('called')
         const getData = () => {
             fetch('https://api.npoint.io/97d7e0d71e507947a59f')
             .then(response => response.json())
@@ -22,13 +22,12 @@ function CoursesSection() {
         getData();
     }, []);
 
-    const box = <CoursesBox sectionData={coursesData[currentTab]}></CoursesBox>;
     return ( 
         <div className="courses-section">
             <h2 className="courses-section-title">A broad selection of courses</h2>
             <p>Choose from 185,000 online video courses with new additions published every month</p>
             <Tabs setCurrentTab={setCurrentTab}/>
-            {(box && fetched) || <LoadingSpinner />}
+            {fetched ? <CoursesBox sectionData={coursesData[currentTab]} /> : <LoadingSpinner />}
         </div>
      );
 }
