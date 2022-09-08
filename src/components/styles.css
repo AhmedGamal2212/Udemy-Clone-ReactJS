@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+nav {
+    box-shadow: 0px 3px 5px #c3c2c2;
+    height: 3.2rem;
+    padding: 1rem;
+    z-index: 2;
+    margin-bottom: 0.3rem;
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.categories-btn,
+.search-bar,
+.login-btn,
+.signup-btn,
+.lang-btn,
+.teach-on-udemy-btn,
+.udemy-business-btn {
+    display: none;
+}
+
+.search-bar {
+    min-width: 20rem;
+}
+
+.menu-btn button,
+.search-btn button,
+.cart-btn button {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    flex-grow: 2;
+}
+
+.logo img {
+    display: block;
+    width: 5rem;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    min-width: auto;
+    padding: 0.5rem;
+}
+
+li button {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+button i:hover {
+    cursor: pointer;
+}
+
+.cart-btn i {
+    font-size: 1.2rem;
+}
+
+.new-to-udemy {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.new-to-udemy img {
+    width: 100%;
+    height: auto;
+}
+.new-to-udemy figure {
+    width: 100%;
+    height: auto;
+}
+
+.new-to-udemy article {
+    padding: 1.6rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 6px rgb(225, 221, 221);
+}
+
+.new-to-udemy p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.new-to-udemy p:last-child {
+    font-weight: lighter;
+    color:dimgrey;
+    font-size: 1rem;
+}
+
+/* Courses */
+
+.courses-section {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.courses-section-title {
+    font-weight: bold;
+    font-size: 1.8rem !important;
+}
+
+.courses-section .courses-radio span:hover {
+    color: black;
+}
+
+.courses-section h2 {
+    margin: 0.6rem 0;
+}
+
+.courses-section p {
+    font-size: 1.2rem;
+}
+
+.courses-section-header {
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+}
+
+.courses-radio {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.courses-radio span {
+    margin-right: 1rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.courses-radio input[type="radio"]{
+    display: none;
+}
+
+.courses-radio input[type="radio"]:checked+span {
+    color:black;
+}
+
+.courses-container {
+    border: 1px solid rgba(128, 128, 128, 50%);
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+.explore {
+    margin: 2rem 0;
+    background-color: transparent;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.explore:hover {
+    background-color: whitesmoke;
+}
+
+.section-header,
+.section-description {
+    display: none;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0.5rem;
+}
+
+.card-body .course-title {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body .course-instructors {
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.course-rating-container .course-rating {
+    display: inline;
+    font-weight: bold;
+    color: rgb(223, 93, 0);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.stars {
+    color: darkorange;
+    font-size: 1rem;
+}
+
+.course-price {
+    font-weight: bold;
+    font-size: 1.5rem !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: larger;
+    top: 40%;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.top-categories-container {
+    padding: 1rem;
+}
+
+.top-categories-title {
+    font-weight: bold;
+}
+
+.top-categories-wrapper {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.top-categories-wrapper figure {
+    padding: 0.5rem;
+}
+
+.top-categories-wrapper figure img {
+    transition-duration: 0.3s;
+}
+
+.top-categories-wrapper figure img:hover {
+    transform: scale(1.05);
+}
+
+
+.top-categories-wrapper figcaption {
+    margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 500px){
+    .new-to-udemy p:first-child {
+        font-size: 2.1rem;
+    }
+
+    .new-to-udemy p:last-child {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .new-to-udemy {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .new-to-udemy article,
+    .new-to-udemy figure {
+        width: 40%;
+    }
+
+    .new-to-udemy article {
+        max-width: 35rem;
+    }
+
+    .new-to-udemy p:first-child {
+        font-size: 2rem;
+    }
+
+    .courses-section-title {
+        font-size: 2.5rem !important;
+    }
+
+    .courses-container {
+        padding: 2rem;
+    }
+
+    .courses-section {
+        padding: 2rem;
+    }
+
+    .courses-section-header {
+        font-size: 2rem !important;
+    }
+
+    .card-body .course-title {
+        font-size: 2rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .card-body .course-instructors {
+        font-size: 1.5rem;
+    }
+
+    .course-rating-container .course-rating {
+        font-size: 2rem;
+    }
+
+    .stars {
+        font-size: 1.5rem;
+    }
+    
+    .course-price {
+        font-size: 2.5rem !important;
+    }
+
+
+}
+
+@media only screen and (min-width: 800px){
+    /* Header */
+
+    .search-btn,
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        height: 5rem;
+    }
+
+    .categories-btn,
+    .search-bar,
+    .login-btn,
+    .signup-btn,
+    .lang-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        flex-grow: initial;
+    }
+
+    .categories-btn button {
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+    }
+
+    .categories-btn button:hover,
+    .cart-btn button:hover,
+    .udemy-business-btn button:hover {
+        color:#401b9c;
+    }
+
+    .login-btn button:hover {
+        background-color: whitesmoke;
+    }
+
+    .search-bar {
+        flex-grow: 1;
+    }
+
+    form {
+        border: 1px black solid;
+        border-radius: 70px;
+        background: whitesmoke;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        width: 80%;
+    }
+
+    form i {
+        display: block;
+        color: grey;
+        font-size: medium;
+    }
+
+    form button {
+        border: none;
+        background: transparent;
+        min-width: 50px;
+    }
+
+    form input[type="text"] {
+        outline: transparent;
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .login-btn button,
+    .signup-btn button {
+        background-color: transparent;
+        border: 1px solid black;
+        font-weight: bold;
+        width: 5rem;
+        font-size: 1.2rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .signup-btn button {
+        min-width: 6rem;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .lang-btn button{
+        font-size: 1.5rem;
+        padding: 10px;
+        background-color: transparent;
+    }     
+
+    /* courses section */
+
+    .courses-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .courses-section p {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media only screen and (min-width: 921px){
+    
+    .cart-btn i {
+        font-size: 1.5rem;
+    }
+    
+    .teach-on-udemy-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teach-on-udemy-btn button {
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        min-width: 8rem;
+        cursor: pointer;
+    }
+
+    .teach-on-udemy-btn button:hover {
+        color: #401b9c;
+    }
+
+    .new-to-udemy {
+        width: 90%;
+    }
+
+    .new-to-udemy p:first-child {
+        font-size: 3rem;
+    }
+
+    .courses-section-title {
+        font-size: 3rem !important;
+    }
+
+    .card-body .course-title {
+        font-size: 2.5rem;
+    }
+
+    .card-body .course-instructors {
+        font-size: 2rem;
+    }
+
+    .course-rating-container .course-rating {
+        font-size: 2.5rem;
+    }
+
+    .stars {
+        font-size: 2rem;
+    }
+    
+    .course-price {
+        font-size: 3rem !important;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1081px){
+    .udemy-business-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .udemy-business-btn button {
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        min-width: 8rem;
+        cursor: pointer;
+    }
+
+    .teach-on-udemy-btn button:hover {
+        color: #401b9c;
+    }
+
+    .courses-section-header {
+        font-size: 2.5rem !important;
+    }
+}
