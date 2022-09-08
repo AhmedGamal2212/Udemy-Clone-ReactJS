@@ -1,6 +1,7 @@
 .courseWrapper {
     width: 100%;
     padding: 0.5rem;
+    flex-grow: 1;
 }
 
 img {

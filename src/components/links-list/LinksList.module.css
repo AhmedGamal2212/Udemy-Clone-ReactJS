@@ -1,0 +1,20 @@
+.list {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #fff;
+    text-decoration: underline;
+}

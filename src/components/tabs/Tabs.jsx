@@ -22,7 +22,7 @@ function Tabs() {
         <>
             <fieldset className="courses-radio">
                 {tabs.map((category, idx) => {
-                    return <Tab category={category} htmlValue={htmlValues[idx]} />
+                    return <Tab key={idx} category={category} htmlValue={htmlValues[idx]} />
                 })}
             </fieldset>
         </>
