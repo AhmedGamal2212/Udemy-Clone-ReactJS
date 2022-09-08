@@ -12,9 +12,9 @@ const Card = ({course}) => {
                         <img src={image} alt="" />
                     </figure>
                     <section className={styles.body}>
-                        <h3 className={styles.title}>
+                        <p className={styles.title}>
                             {title}
-                        </h3>
+                        </p>
                         <p className={styles.instructors}>
                             {instructors}
                         </p>
