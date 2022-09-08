@@ -176,73 +176,6 @@ button i:hover {
     color:black;
 }
 
-.courses-container {
-    border: 1px solid rgba(128, 128, 128, 50%);
-    padding: 0.5rem;
-    margin: 0.5rem auto;
-}
-
-.explore {
-    margin: 2rem 0;
-    background-color: transparent;
-    border: 1px solid black;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem;
-    cursor: pointer;
-    width: fit-content;
-}
-
-.explore:hover {
-    background-color: whitesmoke;
-}
-
-.section-header,
-.section-description {
-    display: none;
-}
-
-.card {
-    border: none;
-}
-
-.card-body {
-    padding: 0.5rem;
-}
-
-.card-body .course-title {
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.card-body .course-instructors {
-    color: grey;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-}
-
-.course-rating-container .course-rating {
-    display: inline;
-    font-weight: bold;
-    color: rgb(223, 93, 0);
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-.stars {
-    color: darkorange;
-    font-size: 1rem;
-}
-
-.course-price {
-    font-weight: bold;
-    font-size: 1.5rem !important;
-}
-
 .carousel-control-next,
 .carousel-control-prev {
     background-color: black;
@@ -255,36 +188,6 @@ button i:hover {
 
 .carousel-inner {
     padding: 1em;
-}
-
-.top-categories-container {
-    padding: 1rem;
-}
-
-.top-categories-title {
-    font-weight: bold;
-}
-
-.top-categories-wrapper {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.top-categories-wrapper figure {
-    padding: 0.5rem;
-}
-
-.top-categories-wrapper figure img {
-    transition-duration: 0.3s;
-}
-
-.top-categories-wrapper figure img:hover {
-    transform: scale(1.05);
-}
-
-
-.top-categories-wrapper figcaption {
-    margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 500px){
@@ -338,34 +241,6 @@ button i:hover {
     .courses-section-header {
         font-size: 2rem !important;
     }
-
-    .card-body .course-title {
-        font-size: 2rem;
-    }
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .card-body .course-instructors {
-        font-size: 1.5rem;
-    }
-
-    .course-rating-container .course-rating {
-        font-size: 2rem;
-    }
-
-    .stars {
-        font-size: 1.5rem;
-    }
-    
-    .course-price {
-        font-size: 2.5rem !important;
-    }
-
-
 }
 
 @media only screen and (min-width: 800px){
@@ -476,7 +351,6 @@ button i:hover {
     .courses-section p {
         font-size: 1.6rem;
     }
-
 }
 
 @media only screen and (min-width: 921px){
@@ -514,30 +388,6 @@ button i:hover {
     .courses-section-title {
         font-size: 3rem !important;
     }
-
-    .card-body .course-title {
-        font-size: 2.5rem;
-    }
-
-    .card-body .course-instructors {
-        font-size: 2rem;
-    }
-
-    .course-rating-container .course-rating {
-        font-size: 2.5rem;
-    }
-
-    .stars {
-        font-size: 2rem;
-    }
-    
-    .course-price {
-        font-size: 3rem !important;
-    }
-
-    .card-body {
-        padding: 1rem;
-    }
 }
 
 @media only screen and (min-width: 1081px){
@@ -558,9 +408,5 @@ button i:hover {
 
     .teach-on-udemy-btn button:hover {
         color: #401b9c;
-    }
-
-    .courses-section-header {
-        font-size: 2.5rem !important;
     }
 }
