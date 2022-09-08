@@ -43,10 +43,6 @@
     flex-direction: column;
 }
 
-.copyRights {
-    padding-bottom: ;
-}
-
 @media only screen and (min-width: 700px){
     .linksContainer {
         flex-direction: row;
