@@ -1,5 +1,5 @@
 import React from 'react'
-import CoursesContainer from '../coursesContainer/CoursesContainer'
+import CoursesContainer from '../courses-container/CoursesContainer'
 import styles from './CoursesBox.module.css'
 
 const CoursesBox = ({title, description, courses}) => {
