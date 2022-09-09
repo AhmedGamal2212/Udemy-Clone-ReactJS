@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ahmedGamal-Project2React/static/css/main.174d72fe.css",
-    "main.js": "/ahmedGamal-Project2React/static/js/main.e72ffc97.js",
+    "main.css": "/ahmedGamal-Project2React/static/css/main.50b33cab.css",
+    "main.js": "/ahmedGamal-Project2React/static/js/main.46a85ff9.js",
     "static/js/787.7fbb78d4.chunk.js": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js",
     "index.html": "/ahmedGamal-Project2React/index.html",
-    "main.174d72fe.css.map": "/ahmedGamal-Project2React/static/css/main.174d72fe.css.map",
-    "main.e72ffc97.js.map": "/ahmedGamal-Project2React/static/js/main.e72ffc97.js.map",
+    "main.50b33cab.css.map": "/ahmedGamal-Project2React/static/css/main.50b33cab.css.map",
+    "main.46a85ff9.js.map": "/ahmedGamal-Project2React/static/js/main.46a85ff9.js.map",
     "787.7fbb78d4.chunk.js.map": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.174d72fe.css",
-    "static/js/main.e72ffc97.js"
+    "static/css/main.50b33cab.css",
+    "static/js/main.46a85ff9.js"
   ]
 }
