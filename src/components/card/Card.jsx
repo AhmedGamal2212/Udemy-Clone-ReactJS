@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styles from './Card.module.css'
 import { Popover } from '@mui/material';
+import PopoverCard from '../popover-card/PopoverCard';
 
 const Card = ({course}) => {
-    const {headline:title, visible_instructors, image_304x171:image, rating} = course;
+    const {title, visible_instructors, image_304x171:image, rating} = course;
     const instructors = visible_instructors.map(instructor => instructor.title).join(', ');
 
     const [anchorEl, setAnchorEl] = useState(null);
@@ -51,11 +52,12 @@ const Card = ({course}) => {
             </div>
 
             <Popover 
+                style={{zIndex: 50000}}
                 id="mouse-over-popover"
                 open={open}
                 anchorEl={anchorEl}
                 onClose={closePopover}
-                onMouseLeave={closePopover}
+                // onMouseLeave={closePopover}
                 anchorOrigin={{
                     vertical: 'center',
                     horizontal: 'center',
@@ -64,7 +66,6 @@ const Card = ({course}) => {
                     vertical: 'center',
                     horizontal: 'center',
                 }}
-                // disableRestoreFocus
                 sx={{
                     pointerEvents: 'none'
                 }}
@@ -75,8 +76,11 @@ const Card = ({course}) => {
                         pointerEvents: 'auto'
                     }
                 }}
+                disableRestoreFocus
+                disableScrollLock
+                // canAutoPosition='false'
                 >
-                
+                <PopoverCard course={course}/>
             </Popover>
 
         </>

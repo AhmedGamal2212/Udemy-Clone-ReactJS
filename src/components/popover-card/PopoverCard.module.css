@@ -1,0 +1,24 @@
+.cardWrapper {
+    width: 400px;
+    height: 550px;
+    padding: 1.6rem;
+}
+
+.courseTitle {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.courseTitle :hover {
+    color: rgb(71, 4, 71);
+}
+
+.date {
+    color: darkgreen;
+}
+
+.date span {
+    font-weight: bold;
+}
