@@ -2,7 +2,6 @@
     width: 100%;
     padding: 0.5rem;
     flex-grow: 1;
-    max-width: 25%;
 }
 
 img {
@@ -90,18 +89,21 @@ img {
 
 @media only screen and (min-width: 700px){
     .courseWrapper {
-        width: 46%;
+        width: 50%;
+        max-width: 50%;
     }
 }
 
 @media only screen and (min-width: 850px){
     .courseWrapper {
         width: 30%;
+        max-width: 30%;
     }
 }
 
 @media only screen and (min-width: 1200px){
     .courseWrapper {
-        width: 22%;
+        width: 25%;
+        max-width: 25%;
     }
 }
