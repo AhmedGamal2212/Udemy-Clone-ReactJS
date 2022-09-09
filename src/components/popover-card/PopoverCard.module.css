@@ -1,5 +1,5 @@
 .cardWrapper {
-    width: 400px;
+    width: 300px;
     /* height: 550px; */
     height: fit-content;
     padding: 1.2rem;
@@ -38,7 +38,7 @@
 }
 
 .addToCart {
-    width: 75%;
+    width: 65%;
     height: 3rem;
     color: white;
     font-weight: bold;
@@ -54,7 +54,7 @@
 
 .heartButton {
     background-color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     width: 4rem;
     border-radius: 100%;
     border: 3px solid black;
@@ -63,4 +63,18 @@
 
 .heartButton:hover {
     background-color: rgb(245, 243, 243);
+}
+
+@media only screen and (min-width: 500px){
+    .cardWrapper {
+        width: 400px;
+    }
+    
+    .addToCart {
+        width: 75%;
+    }
+    
+    .heartButton {
+        font-size: 40px;
+    }
 }
