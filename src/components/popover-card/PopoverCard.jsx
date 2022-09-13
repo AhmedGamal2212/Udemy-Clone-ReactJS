@@ -7,8 +7,8 @@ function PopoverCard({ course }) {
   const [year, month] = course.last_update_date.split("-");
   const date = new Date(year, month - 1);
 
-  const objectives = course.objectives_summary.map((objective) => (
-    <p>
+  const objectives = course.objectives_summary.map((objective, idx) => (
+    <p key={idx}>
       <span className={styles.tickIcon}>
         <i className="fa-solid fa-check"></i>
       </span>
@@ -18,9 +18,9 @@ function PopoverCard({ course }) {
 
   return (
     <div className={styles.cardWrapper}>
-      <Link to={`/ahmedGamal-Project2React/courses/${course.id}`}><a className={styles.courseTitle} href="#">
+      <Link to={`/ahmedGamal-Project2React/courses/${course.id}`} className={styles.courseTitle}>
         <p>{course.title}</p>
-      </a></Link>
+      </Link>
       <p className={styles.date}>
         Updated{" "}
         <span>
@@ -34,7 +34,7 @@ function PopoverCard({ course }) {
       {objectives}
       <div className={styles.buttonsSection}>
         <button className={styles.addToCart}>Add to cart</button>
-        <button className={styles.heartButton}><i class="fa-regular fa-heart"></i></button>
+        <button className={styles.heartButton}><i className="fa-regular fa-heart"></i></button>
       </div>
     </div>
   );

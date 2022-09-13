@@ -16,7 +16,7 @@ function SearchBar() {
     }
 
     const searchPressed = barValue => {
-        navigate('/ahmedGamal-Project2React/');
+        navigate(-1);
         setSearchTerm(barValue);
         setSearchParams((barValue && {filter: barValue}) || {});
         const coursesSection = document.querySelector('.courses-section');

@@ -4,6 +4,7 @@ import NavBar from './components/nav-bar/NavBar'
 import { Route, Routes } from 'react-router-dom';
 import SingleCoursePage from './pages/single-course-page/SingleCoursePage';
 import PageNotFound from './components/page-not-found/PageNotFound';
+import Footer from './components/footer/Footer';
 
 export const Data = createContext();
 export const FetchState = createContext();
@@ -39,6 +40,7 @@ const App = () => {
                   <Route path='/ahmedGamal-Project2React/courses/:courseId' element={<SingleCoursePage />}></Route>  
                   <Route path='*' element={<PageNotFound />}></Route>
                 </Routes>
+                <Footer />
             </SetSearchTermContext.Provider>
           </SearchTermContext.Provider>
         </FetchState.Provider>
