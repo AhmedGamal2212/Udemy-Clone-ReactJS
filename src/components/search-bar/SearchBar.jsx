@@ -1,19 +1,24 @@
 import React, {useContext, useState} from 'react';
 import '../styles.css'
 import { SetSearchTermContext } from '../../App';
+import {useNavigate, useSearchParams} from 'react-router-dom';
 
 function SearchBar() {
     const setSearchTerm = useContext(SetSearchTermContext);
 
     const [barValue, setBarValue] = useState('');
+    const [searchParams, setSearchParams] = useSearchParams();
+    const navigate = useNavigate();
 
     const update = e => {
         e.preventDefault();
         setBarValue(e.target.value);
     }
 
-    const searchPressed = (barValue) => {
+    const searchPressed = barValue => {
+        navigate('/ahmedGamal-Project2React/');
         setSearchTerm(barValue);
+        setSearchParams((barValue && {filter: barValue}) || {});
         const coursesSection = document.querySelector('.courses-section');
         coursesSection.scrollIntoView({behavior:"smooth", block:'start'});
     }

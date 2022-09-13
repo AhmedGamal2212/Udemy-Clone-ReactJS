@@ -1,6 +1,9 @@
 import React, { useEffect, useState, createContext } from 'react';
 import HomePage from './pages/home/HomePage';
 import NavBar from './components/nav-bar/NavBar'
+import { Route, Routes } from 'react-router-dom';
+import SingleCoursePage from './pages/single-course-page/SingleCoursePage';
+import PageNotFound from './components/page-not-found/PageNotFound';
 
 export const Data = createContext();
 export const FetchState = createContext();
@@ -13,7 +16,6 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-      console.log('called')
       const getData = () => {
           fetch('https://api.npoint.io/97d7e0d71e507947a59f')
           .then(response => response.json())
@@ -30,9 +32,13 @@ const App = () => {
       <Data.Provider value={coursesData}>
         <FetchState.Provider value={fetched}>
           <SearchTermContext.Provider value={searchTerm}>
-            <SetSearchTermContext.Provider value={setSearchTerm}>
-              <NavBar />
-              <HomePage />
+            <SetSearchTermContext.Provider value={setSearchTerm}> 
+                <NavBar />
+                <Routes>
+                  <Route path='/ahmedGamal-Project2React' element={<HomePage />}></Route>
+                  <Route path='/ahmedGamal-Project2React/courses/:courseId' element={<SingleCoursePage />}></Route>  
+                  <Route path='*' element={<PageNotFound />}></Route>
+                </Routes>
             </SetSearchTermContext.Provider>
           </SearchTermContext.Provider>
         </FetchState.Provider>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import '../styles.css'
 import Tab from '../tab/Tab';
+import htmlValues from '../../htmlValues';
 
 function Tabs({setCurrentTab}) {
     const categories = ['Python',
@@ -10,13 +11,7 @@ function Tabs({setCurrentTab}) {
         'Data Science',
         'AWS Certification', 
         'Drawing'];
-    const htmlValues = ['python',
-        'excel',
-        'web',
-        'js', 
-        'data',
-        'aws',
-        'draw'];
+    
     const tabs = [...categories];
     const [selectedIndex, setSelectedIndex] = useState(0);
     return ( 

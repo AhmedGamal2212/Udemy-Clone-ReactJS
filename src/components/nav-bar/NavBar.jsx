@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles.css'
 import SearchBar from '../search-bar/SearchBar';
+import {Link} from 'react-router-dom';
 
 function NavBar() {
     return (  
@@ -10,12 +11,12 @@ function NavBar() {
                     <li className="menu-btn">
                         <button type="button" name="menu-icon"><i className="fa-solid fa-bars"></i></button>
                     </li>
-                    <li className="logo">
+                    <Link to='/ahmedGamal-Project2React/'><li className="logo">
                         {/* a link to the home page */}
                         <a href="#">
                             <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="udemy-logo" />
                         </a>
-                    </li>
+                    </li></Link>
                     <li className="categories-btn">
                         <button type="button" name="categories-button">Categories</button>
                     </li>
