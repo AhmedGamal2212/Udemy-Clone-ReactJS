@@ -1,80 +1,80 @@
 .cardWrapper {
-    width: 300px;
-    /* height: 550px; */
-    height: fit-content;
-    padding: 1.2rem;
+  width: 300px;
+  /* height: 550px; */
+  height: fit-content;
+  padding: 1.2rem;
 }
 
 .courseTitle {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .courseTitle:hover {
-    color: rgb(71, 4, 71);
+  color: rgb(71, 4, 71);
 }
 
 .date {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 .date span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .info {
-    color: grey;
+  color: grey;
 }
 
 .tickIcon {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .addToCart {
-    width: 65%;
-    height: 3rem;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    margin-bottom: 1rem;
-    background-color: rgb(157, 38, 204);
+  width: 65%;
+  height: 3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: rgb(157, 38, 204);
 }
 
 .addToCart:hover {
-    background-color: rgb(120, 28, 156);
+  background-color: rgb(120, 28, 156);
 }
 
 .heartButton {
-    background-color: #fff;
-    font-size: 35px;
-    width: 4rem;
-    border-radius: 100%;
-    border: 3px solid black;
-    margin-left: 1rem;
+  background-color: #fff;
+  font-size: 35px;
+  width: 4rem;
+  border-radius: 100%;
+  border: 3px solid black;
+  margin-left: 1rem;
 }
 
 .heartButton:hover {
-    background-color: rgb(245, 243, 243);
+  background-color: rgb(245, 243, 243);
 }
 
-@media only screen and (min-width: 500px){
-    .cardWrapper {
-        width: 400px;
-    }
-    
-    .addToCart {
-        width: 75%;
-    }
-    
-    .heartButton {
-        font-size: 40px;
-    }
+@media only screen and (min-width: 500px) {
+  .cardWrapper {
+    width: 400px;
+  }
+
+  .addToCart {
+    width: 75%;
+  }
+
+  .heartButton {
+    font-size: 40px;
+  }
 }
