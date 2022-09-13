@@ -2,16 +2,14 @@ import React, {useContext} from 'react'
 import Card from '../card/Card';
 import styles from './CoursesContainer.module.css'
 import { SearchTermContext } from '../../App';
-import { Popover } from '@mui/material';
 
 const CoursesContainer = ({courses}) => {
 
     const searchTerm = useContext(SearchTermContext).toLowerCase();
 
-    const coursesCards = courses.filter(course => course.headline.toLowerCase().includes(searchTerm)).map((course) => {
+    const coursesCards = courses.filter(course => course.title.toLowerCase().includes(searchTerm)).map((course) => {
         return <Card key={course.id} course={course}></Card>;
     });
-
 
     return (
         <>
