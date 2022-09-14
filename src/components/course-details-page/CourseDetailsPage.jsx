@@ -1,7 +1,12 @@
 import React from "react";
+import SingleCourseHeader from "../single-course-header/SingleCourseHeader";
 
 function CourseDetailsPage({ courseDetails }) {
-  return <h1>CourseDetails {courseDetails.id}</h1>;
+  return (
+    <>
+      <SingleCourseHeader courseDetails={courseDetails} />
+    </>
+  );
 }
 
 export default CourseDetailsPage;

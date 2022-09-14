@@ -16,14 +16,10 @@ function SearchBar() {
   };
 
   const searchPressed = (barValue) => {
-    if (window.location.pathname.includes("/courses")) navigate(-1);
-
-    const coursesSection = document.querySelector(".courses-section");
-    if (coursesSection !== null) {
-      setSearchTerm(barValue);
-      setSearchParams((barValue && { filter: barValue }) || {});
-      coursesSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    navigate({
+      pathname: "/ahmedGamal-Project2React/",
+      search: barValue ? `filter=${barValue}` : '',
+    });
   };
 
   const keySearch = (e) => {

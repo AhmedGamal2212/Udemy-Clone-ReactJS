@@ -1,0 +1,25 @@
+.mainContainer {
+    background-color: #1c1d1f;
+}
+
+.categoriesSection {
+    padding: 1rem;
+    font-size: 0.8em;
+}
+
+.subCategory {
+    display: inline-block;
+    margin: 0 6px;
+    font-weight: bold;
+    color: #cec0fc;
+}
+
+.sub-category-icon {
+    color: #cec0fc;
+}
+
+.mainDetails {
+    padding: 1rem;
+    background-color: #1c1d1f;
+    color: #fff;
+}

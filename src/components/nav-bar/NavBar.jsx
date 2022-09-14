@@ -13,7 +13,7 @@ function NavBar() {
               <i className="fa-solid fa-bars"></i>
             </button>
           </li>
-          <Link to="/ahmedGamal-Project2React/">
+          <Link style={{ flexGrow: 1 }} to="/ahmedGamal-Project2React/">
             <li className="logo">
               <img
                 src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
