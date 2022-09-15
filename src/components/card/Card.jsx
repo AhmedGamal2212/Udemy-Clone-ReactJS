@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Card.module.css";
 import { Popover } from "@mui/material";
 import PopoverCard from "../popover-card/PopoverCard";
+import StarsRating from "../stars-rating/StarsRating";
 
 const Card = ({ course }) => {
   const { title, visible_instructors, image_304x171: image, rating } = course;
@@ -36,15 +37,7 @@ const Card = ({ course }) => {
           <section className={styles.body}>
             <p className={styles.title}>{title}</p>
             <p className={styles.instructors}>{instructors}</p>
-            <section>
-              <p className={styles.rating}>{rating.toPrecision(2)}</p>
-              <div className={styles.starsOuter}>
-                <div
-                  className={styles.starsInner}
-                  style={{ width: `${(rating / 5) * 100}%` }}
-                ></div>
-              </div>
-            </section>
+            <StarsRating rating={rating} />
             <p className={styles.price}>$15</p>
           </section>
         </article>

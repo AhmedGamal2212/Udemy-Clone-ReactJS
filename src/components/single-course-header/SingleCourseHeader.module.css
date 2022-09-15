@@ -1,57 +1,37 @@
 .mainContainer {
-    background-color: #1c1d1f;
+  background-color: #1c1d1f;
 }
 
 .categoriesSection {
-    padding: 1rem;
-    font-size: 0.8em;
+  padding: 1rem;
+  font-size: 0.8em;
 }
 
 .subCategory {
-    display: inline-block;
-    margin: 0 6px;
-    font-weight: bold;
-    color: #cec0fc;
+  display: inline-block;
+  margin: 0 6px;
+  font-weight: bold;
+  color: #cec0fc;
 }
 
 .sub-category-icon {
-    color: #cec0fc;
+  color: #cec0fc;
 }
 
 .mainDetails {
-    padding: 1rem;
-    background-color: #1c1d1f;
-    color: #fff;
+  padding: 1rem;
+  background-color: #1c1d1f;
+  color: #fff;
 }
 
-.rating {
-    display: inline;
-    font-weight: bold;
-    color: rgb(222, 136, 15);
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
+.linkLikeText {
+  display: inline-block;
+  margin-left: 7px;
+  text-decoration: underline;
+  color: #cec0fc;
 }
 
-.starsOuter {
-    display: inline-block;
-    position: relative;
-    font-family: FontAwesome;
-}
-
-.starsOuter::before {
-    content: "\f006 \f006 \f006 \f006 \f006";
-}
-
-.starsInner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-}
-
-.starsInner::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    color:rgb(222, 136, 15);
+.lastUpdate,
+.lastUpdateDate {
+  margin-left: 5px;
 }
