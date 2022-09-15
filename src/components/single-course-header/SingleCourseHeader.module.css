@@ -23,3 +23,35 @@
     background-color: #1c1d1f;
     color: #fff;
 }
+
+.rating {
+    display: inline;
+    font-weight: bold;
+    color: rgb(222, 136, 15);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.starsOuter {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+}
+
+.starsOuter::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.starsInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.starsInner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color:rgb(222, 136, 15);
+}

@@ -10,7 +10,7 @@ const CoursesBox = ({ sectionData }) => {
     title: sectionName,
   } = sectionData;
   return (
-    <section className={styles.wrapper}>
+    <section ref={courses} className={styles.wrapper}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
       <button className={styles.exploreButton}>Explore {sectionName}</button>
