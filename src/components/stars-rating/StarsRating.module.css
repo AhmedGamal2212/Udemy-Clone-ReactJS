@@ -2,8 +2,8 @@
 .rating {
     display: inline;
     font-weight: bold;
-    color: rgb(222, 136, 15);
-    font-size: 1.5rem;
+    color: #f3ca8c;
+    font-size: 1rem;
     margin-right: 0.5rem;
   }
   
@@ -11,6 +11,7 @@
     display: inline-block;
     position: relative;
     font-family: FontAwesome;
+    font-size: small;
   }
   
   .starsOuter::before {
@@ -28,6 +29,6 @@
   
   .starsInner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
-    color: rgb(222, 136, 15);
+    color: #f3ca8c;
   }
   

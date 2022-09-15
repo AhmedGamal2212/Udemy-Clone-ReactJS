@@ -1,0 +1,21 @@
+.objectivesContainer {
+    width: 90%;
+    margin: 0.5rem auto;
+    border: 2px solid lightgray;
+    padding: 1rem 1.5rem;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.objectives {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.objective {
+    flex-grow: 1;
+    margin-right: 10px;
+}

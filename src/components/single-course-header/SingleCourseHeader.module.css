@@ -1,37 +1,101 @@
 .mainContainer {
-  background-color: #1c1d1f;
+	background-color: #1c1d1f;
 }
 
 .categoriesSection {
-  padding: 1rem;
-  font-size: 0.8em;
+	padding: 1rem;
+	font-size: 0.8em;
 }
 
 .subCategory {
-  display: inline-block;
-  margin: 0 6px;
-  font-weight: bold;
-  color: #cec0fc;
+	display: inline-block;
+	margin: 0 6px;
+	font-weight: bold;
+	color: #cec0fc;
 }
 
 .sub-category-icon {
-  color: #cec0fc;
+	color: #cec0fc;
 }
 
 .mainDetails {
-  padding: 1rem;
-  background-color: #1c1d1f;
-  color: #fff;
+	padding: 1rem;
+	background-color: #1c1d1f;
+	color: #fff;
 }
 
 .linkLikeText {
-  display: inline-block;
-  margin-left: 7px;
-  text-decoration: underline;
-  color: #cec0fc;
+	display: inline-block;
+	margin-left: 7px;
+	text-decoration: underline;
+	color: #cec0fc;
 }
 
 .lastUpdate,
 .lastUpdateDate {
-  margin-left: 5px;
+	margin-left: 5px;
+}
+
+.languages {
+	margin-left: 5px;
+}
+
+.headerPrice {
+	display: flex;
+	align-items: center;
+}
+
+.bigPrice {
+	font-weight: 900;
+	font-size: 35px;
+}
+
+.smallPrice {
+	margin-left: 5px;
+	text-decoration: line-through;
+}
+
+.offerSize {
+	margin-left: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.offerText {
+	margin-left: 5px;
+}
+
+.timeRemaining {
+	color: #b32d0f;
+}
+
+.previewFooter {
+	display: flex;
+	flex-direction: column;
+}
+
+.addToCartButton {
+	border: none;
+	background-color: #a435f0;
+	color: #fff;
+	cursor: pointer;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+.previewFooterButtons {
+	display: flex;
+}
+
+.footerButton {
+	flex-grow: 1;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	margin: 0 2rem;
+	cursor: pointer;
 }
