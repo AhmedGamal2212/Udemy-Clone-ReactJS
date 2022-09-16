@@ -33,14 +33,16 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 				expandIcon={<ExpandMore className={styles.expandIcon} />}
 			>
 				<span className={styles.summaryText}>{title}</span>
-				{/* TODO: hide them in large screens */}
-				<span>{sectionLectures}lectures . {Math.round(sectionLength / 60)}min</span>
+				<span className={styles.hide}>
+					{sectionLectures}lectures . {Math.round(sectionLength / 60)}
+					min
+				</span>
 			</AccordionSummary>
 			<AccordionDetails className={styles.accordionDetails}>
 				{items.map((item, idx) => {
 					return (
-						<p>
-							<i className='fa-solid fa-circle-play'></i>
+						<div className={styles.lecture}>
+							<span className='fa-solid fa-circle-play'></span>
 							<span
 								className={
 									item.can_be_previewed
@@ -50,7 +52,13 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 							>
 								{item.title}
 							</span>
-						</p>
+							{item.can_be_previewed ? (
+								<span className={styles.preview}>Preview</span>
+							) : (
+								<span></span>
+							)}
+							<span className={styles.hide}>{item.content_summary}</span>
+						</div>
 					);
 				})}
 			</AccordionDetails>

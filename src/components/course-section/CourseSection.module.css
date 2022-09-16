@@ -1,7 +1,7 @@
 .accordion {
 	box-shadow: none !important;
 	width: 100%;
-    border-radius: 0 !important;
+	border-radius: 0 !important;
 }
 
 .accordionSummary {
@@ -15,21 +15,51 @@
 }
 
 .summaryText {
-    font-weight: bold;
-    flex-grow: 1;
+	font-weight: bold;
+	flex-grow: 1;
 }
 
 .accordionDetails {
-    border-top: 1px solid #d1d7dc;
+	border-top: 1px solid #d1d7dc;
+}
+
+.lecture {
+	display: flex;
+    margin: 0.7rem 0;
 }
 
 .lectureTitle {
-    margin-left: 0.5rem;
+	padding-left: 1rem;
+	flex-grow: 1;
 }
 
 .previewedLecture {
-    text-decoration: underline;
-    color: #5624d0;
-    margin-left: 0.5rem;
-    cursor: pointer;
+	text-decoration: underline;
+	color: #5624d0;
+	cursor: pointer;
+	flex-grow: 1;
+	padding-left: 1rem;
+}
+
+.preview {
+	padding: 0 0.5rem;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #5624d0;
+}
+
+.preview,
+.hide {
+	display: none;
+}
+
+.lecture .hide {
+	color: #6a6f73;
+}
+
+@media only screen and (min-width: 600px) {
+	.preview,
+	.hide {
+		display: initial;
+	}
 }
