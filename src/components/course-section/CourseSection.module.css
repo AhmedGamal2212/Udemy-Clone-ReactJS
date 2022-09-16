@@ -1,0 +1,35 @@
+.accordion {
+	box-shadow: none !important;
+	width: 100%;
+    border-radius: 0 !important;
+}
+
+.accordionSummary {
+	flex-direction: row-reverse;
+	background-color: #f7f9fa !important;
+}
+
+.expandIcon {
+	margin-right: 0.5rem;
+	color: black;
+}
+
+.summaryText {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.accordionDetails {
+    border-top: 1px solid #d1d7dc;
+}
+
+.lectureTitle {
+    margin-left: 0.5rem;
+}
+
+.previewedLecture {
+    text-decoration: underline;
+    color: #5624d0;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}

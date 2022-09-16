@@ -10,7 +10,10 @@ function CourseObjectives({ courseDetails }) {
 			<section className={styles.objectives}>
 				{objectives.map((objective, idx) => {
 					return (
-						<p key={idx} className={styles.objective}>
+						<p
+							key={idx}
+							className={styles.objective}
+						>
 							<i
 								style={{ marginRight: '10px', color: 'grey' }}
 								className='fa-solid fa-check'

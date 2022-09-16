@@ -1,0 +1,34 @@
+.contentContainer {
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 1rem 0.5rem;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.beforeContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beforeContent p {
+    margin: 0;
+    flex-grow: 2;
+    min-width: 75%;
+}
+
+.expandAllButton {
+    color: #5624d0;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.listItem {
+    border: 1px solid lightgray;
+    padding: 0;
+}

@@ -17,12 +17,14 @@ function CourseDetailsPage({ courseDetails }) {
 			});
 	}, []);
 
-	return (
-		fetched ? <>
+	return fetched ? (
+		<>
 			<SingleCourseHeader courseDetails={courseDetails} />
 			<CourseObjectives courseDetails={courseDetails} />
-			<CourseContent />
-		</> : <LoadingSpinner />
+			<CourseContent details={additionalDetails} />
+		</>
+	) : (
+		<LoadingSpinner />
 	);
 }
 

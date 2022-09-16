@@ -27,7 +27,7 @@ function SingleCourseHeader({ courseDetails }) {
 						<p className={styles.subCategory}>Home</p>
 					</Link>
 					<i className='fa-solid fa-chevron-right sub-category-arrow'></i>
-					<Link to='/ahmedGamal-Project2ReaIct#courses'>
+					<Link to='/ahmedGamal-Project2React#courses'>
 						<p className={styles.subCategory}>courses</p>
 					</Link>
 				</section>
