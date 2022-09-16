@@ -42,7 +42,13 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 				{items.map((item, idx) => {
 					return (
 						<div className={styles.lecture}>
-							<span className='fa-solid fa-circle-play'></span>
+							<span
+								className={
+									item.content_summary.includes('page')
+										? 'fa-regular fa-file'
+										: 'fa-solid fa-circle-play'
+								}
+							></span>
 							<span
 								className={
 									item.can_be_previewed
@@ -57,7 +63,9 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 							) : (
 								<span></span>
 							)}
-							<span className={styles.hide}>{item.content_summary}</span>
+							<span className={styles.hide}>
+								{item.content_summary}
+							</span>
 						</div>
 					);
 				})}
