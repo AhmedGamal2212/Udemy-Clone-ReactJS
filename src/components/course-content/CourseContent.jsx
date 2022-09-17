@@ -16,8 +16,10 @@ function CourseContent({ details }) {
 	const remainingMinutes = Math.round(
 		(timeInSeconds - timeInHours * 60 * 60) / 60
 	);
+	const [clicked, toggleClicked] = useState(false);
 
 	const handleClick = () => {
+		toggleClicked(true);
 		toggleOpen(!open);
 	};
 
@@ -46,7 +48,7 @@ function CourseContent({ details }) {
 							idx={idx}
 						/>
 					);
-					return (
+					return !clicked && idx > 9 ? null : (
 						<ListItem
 							key={idx}
 							disablePadding
@@ -57,6 +59,17 @@ function CourseContent({ details }) {
 					);
 				})}
 			</List>
+			{sections.length > 10 ? (
+				<button
+					className={clicked ? styles.hide : styles.showMoreButton}
+					type='button'
+					onClick={() => toggleClicked(true)}
+				>
+					{sections.length - 10} more sections
+				</button>
+			) : (
+				<span></span>
+			)}
 		</div>
 	);
 }

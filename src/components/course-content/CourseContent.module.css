@@ -1,35 +1,52 @@
 .contentContainer {
-    width: 90%;
-    margin: 0.5rem auto;
-    padding: 1rem 0.5rem;
-    max-width: 45rem;
+	width: 90%;
+	margin: 0.5rem auto;
+	padding: 1rem 0.5rem;
+	max-width: 45rem;
 }
 
 .header {
-    font-size: 25px;
-    font-weight: 900;
+	font-size: 25px;
+	font-weight: 900;
 }
 
 .beforeContent {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .beforeContent p {
-    margin: 0;
-    flex-grow: 2;
-    min-width: 75%;
+	margin: 0;
+	flex-grow: 2;
+	min-width: 75%;
 }
 
 .expandAllButton {
-    color: #5624d0;
-    border: none;
-    background-color: transparent;
-    font-weight: 700;
-    font-size: 1.1rem;
+	color: #5624d0;
+	border: none;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 1.1rem;
 }
 
 .listItem {
-    border: 1px solid lightgray;
-    padding: 0;
+	border: 1px solid lightgray;
+	padding: 0;
+}
+
+.showMoreButton {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #1c1d1f;
+	background-color: #fff;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.showMoreButton:hover {
+    background-color: whitesmoke;
+}
+
+.hide {
+    display: none;
 }

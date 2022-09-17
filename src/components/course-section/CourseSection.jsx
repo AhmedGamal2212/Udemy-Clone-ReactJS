@@ -38,7 +38,7 @@ function CourseSection({ ExpandAll, sectionDetails, idx }) {
 			>
 				<span className={styles.summaryText}>{title}</span>
 				<span className={styles.hide}>
-					{sectionLectures}lectures . {Math.round(sectionLength / 60)}
+					{sectionLectures} lectures . {Math.round(sectionLength / 60)}
 					min
 				</span>
 			</AccordionSummary>
