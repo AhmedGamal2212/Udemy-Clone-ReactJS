@@ -41,7 +41,7 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 			<AccordionDetails className={styles.accordionDetails}>
 				{items.map((item, idx) => {
 					return (
-						<div className={styles.lecture}>
+						<div key={idx} className={styles.lecture}>
 							<span
 								className={
 									(item.content_summary.includes('page')
