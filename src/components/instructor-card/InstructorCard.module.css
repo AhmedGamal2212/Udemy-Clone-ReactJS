@@ -4,24 +4,25 @@
 	color: #5624d0;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .instructorTitle {
 	font-size: 1.4rem;
 	color: #6a6f73;
-    margin: 0;
+	margin: 0;
 }
 
 .instructorProfile {
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
 .instructorImage {
-    margin: 0;
-    overflow: hidden;
-    border-radius: 100%;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 100%;
+	cursor: pointer;
 }
 
 .profileElement {

@@ -7,7 +7,7 @@ import {
 	People,
 	PlayCircle,
 } from '@mui/icons-material';
-import FadedText from '../faded-text/FadedText'
+import FadedText from '../faded-text/FadedText';
 
 function InstructorCard({ details }) {
 	const {
@@ -18,9 +18,21 @@ function InstructorCard({ details }) {
 		reviews,
 		students,
 		courses,
-        description
+		description,
 	} = details;
 
+	const icons = [
+		<Star className={styles.black} />,
+		<WorkspacePremium className={styles.black} />,
+		<People className={styles.black} />,
+		<PlayCircle className={styles.black} />,
+	];
+	const itemsText = [
+		<span className={styles.black}>{rating} Instructor Rating</span>,
+		<span className={styles.black}>{reviews} Reviews</span>,
+		<span className={styles.black}>{students} Students</span>,
+		<span className={styles.black}>{courses} Courses</span>,
+	];
 	return (
 		<article>
 			<p className={styles.instructorName}>{name}</p>
@@ -35,50 +47,25 @@ function InstructorCard({ details }) {
 				</figure>
 				<section className={styles.profileElements}>
 					<List>
-						<ListItem className={styles.listItem}>
-							<ListItemIcon>
-								<Star className={styles.black} />
-							</ListItemIcon>
-							<ListItemText className={styles.profileElement}>
-								<span className={styles.black}>
-									{rating} Instructor Rating
-								</span>
-							</ListItemText>
-						</ListItem>
-						<ListItem className={styles.listItem}>
-							<ListItemIcon>
-								<WorkspacePremium className={styles.black} />
-							</ListItemIcon>
-							<ListItemText className={styles.profileElement}>
-								<span className={styles.black}>
-									{reviews} Reviews
-								</span>
-							</ListItemText>
-						</ListItem>
-						<ListItem className={styles.listItem}>
-							<ListItemIcon>
-								<People className={styles.black} />
-							</ListItemIcon>
-							<ListItemText className={styles.profileElement}>
-								<span className={styles.black}>
-									{students} Students
-								</span>
-							</ListItemText>
-						</ListItem>
-						<ListItem className={styles.listItem}>
-							<ListItemIcon>
-								<PlayCircle className={styles.black} />
-							</ListItemIcon>
-							<ListItemText className={styles.profileElement}>
-								<span className={styles.black}>
-									{courses} Courses
-								</span>
-							</ListItemText>
-						</ListItem>
+						{icons.map((icon, idx) => {
+							return (
+								<ListItem
+									key={idx}
+									className={styles.listItem}
+								>
+									<ListItemIcon>{icon}</ListItemIcon>
+									<ListItemText
+										className={styles.profileElement}
+									>
+										{itemsText[idx]}
+									</ListItemText>
+								</ListItem>
+							);
+						})}
 					</List>
 				</section>
 			</section>
-            <FadedText rawHTML={description}/>
+			<FadedText rawHTML={description} />
 		</article>
 	);
 }
