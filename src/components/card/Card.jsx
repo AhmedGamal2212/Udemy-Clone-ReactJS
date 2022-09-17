@@ -59,7 +59,6 @@ const Card = ({ course }) => {
 				open={open}
 				anchorEl={anchorEl}
 				onClose={closePopover}
-				// onMouseLeave={closePopover}
 				anchorOrigin={{
 					vertical: 'center',
 					horizontal: 'center',
@@ -80,7 +79,6 @@ const Card = ({ course }) => {
 				}}
 				disableRestoreFocus
 				disableScrollLock
-				// canAutoPosition='false'
 			>
 				<PopoverCard course={course} />
 			</Popover>
