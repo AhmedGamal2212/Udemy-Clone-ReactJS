@@ -44,9 +44,10 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 						<div className={styles.lecture}>
 							<span
 								className={
-									item.content_summary.includes('page')
+									(item.content_summary.includes('page')
 										? 'fa-regular fa-file'
-										: 'fa-solid fa-circle-play'
+										: 'fa-solid fa-circle-play') +
+									` ${styles.lectureIcon}`
 								}
 							></span>
 							<span
