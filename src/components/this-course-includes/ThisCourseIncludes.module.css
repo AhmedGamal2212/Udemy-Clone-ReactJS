@@ -1,0 +1,16 @@
+.header {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.black {
+    color: #1c1d1f;
+}
+
+.listItem {
+    padding: 0 0 0 1rem;
+}
+
+.itemText {
+    margin-left: -1rem;
+}
