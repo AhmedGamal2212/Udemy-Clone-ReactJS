@@ -6,6 +6,7 @@ import CourseContent from '../course-content/CourseContent';
 import BuyCourseNavBar from '../buy-course-nav-bar/BuyCourseNavBar';
 import CourseRequirements from '../course-requirements/CourseRequirements';
 import styles from './CourseDetailsPage.module.css';
+import CourseDescription from '../course-description/CourseDescription';
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -28,6 +29,7 @@ function CourseDetailsPage({ courseDetails }) {
 					<CourseObjectives courseDetails={courseDetails} />
 					<CourseContent details={additionalDetails} />
 					<CourseRequirements details={additionalDetails} />
+					<CourseDescription details={additionalDetails} />
 				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>

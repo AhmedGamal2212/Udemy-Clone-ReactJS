@@ -1,0 +1,14 @@
+.header {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.dotIcon {
+    font-size: 6px;
+    margin-right: 1rem;
+}
+
+.point {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}

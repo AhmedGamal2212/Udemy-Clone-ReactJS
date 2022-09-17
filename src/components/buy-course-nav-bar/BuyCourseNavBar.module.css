@@ -74,7 +74,7 @@
 	background-color: #000;
 	font-weight: bold;
 	font-size: 1.1rem;
-    border: none;
+	border: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -88,38 +88,37 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .bar {
-        background-color: #1c1d1f;
-    }
+	.bar {
+		background-color: #1c1d1f;
+	}
 
 	.barLeftContent {
 		display: flex;
 	}
 
-    .barRightContent {
-        justify-content: flex-end;
-    }
+	.barRightContent {
+		justify-content: flex-end;
+	}
 
-    .price {
-        color: #fff;
-    }
+	.price {
+		color: #fff;
+	}
 
-    .buyNowButton {
-        color: #000;
-        background-color: #fff;
-        flex-grow: 0;
-        width: fit-content;
-        padding: 0.5rem;
-    }
+	.buyNowButton {
+		color: #000;
+		background-color: #fff;
+		flex-grow: 0;
+		width: fit-content;
+		padding: 0.5rem;
+	}
 }
 
+@media only screen and (min-width: 1080px) {
+	.barRightContent {
+		display: none;
+	}
 
-@media only screen and (min-width: 1080px){
-    .barRightContent{
-        display: none;
-    }
-
-    .barLeftContent {
-        flex-grow: 1;
-    }
+	.barLeftContent {
+		flex-grow: 1;
+	}
 }

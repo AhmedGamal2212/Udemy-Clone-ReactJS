@@ -27,6 +27,10 @@
 	font-size: 1.1rem;
 }
 
+.expandAllButton:hover {
+	color: #4c27aa;
+}
+
 .listItem {
 	border: 1px solid lightgray;
 	padding: 0;
