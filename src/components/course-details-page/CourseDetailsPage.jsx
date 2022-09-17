@@ -3,6 +3,8 @@ import SingleCourseHeader from '../single-course-header/SingleCourseHeader';
 import CourseObjectives from '../course-objectives/CourseObjectives';
 import LoadingSpinner from '../loading-spinner/LoadingSpinner';
 import CourseContent from '../course-content/CourseContent';
+import BuyCourseNavBar from '../buy-course-nav-bar/BuyCourseNavBar';
+import styles from './CourseDetailsPage.module.css'
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -18,11 +20,12 @@ function CourseDetailsPage({ courseDetails }) {
 	}, []);
 
 	return fetched ? (
-		<>
+		<main>
 			<SingleCourseHeader courseDetails={courseDetails} />
 			<CourseObjectives courseDetails={courseDetails} />
 			<CourseContent details={additionalDetails} />
-		</>
+			<BuyCourseNavBar />
+		</main>
 	) : (
 		<LoadingSpinner />
 	);

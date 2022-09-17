@@ -2,6 +2,11 @@
 	background-color: #1c1d1f;
 }
 
+.body {
+	max-width: 45rem;
+	margin: 0 auto;
+}
+
 .categoriesSection {
 	padding: 1rem;
 	font-size: 0.8em;
@@ -87,10 +92,10 @@
 
 .previewFooterButtons {
 	display: flex;
+	justify-content: space-between;
 }
 
 .footerButton {
-	flex-grow: 1;
 	border: none;
 	background-color: transparent;
 	color: #fff;
@@ -98,4 +103,11 @@
 	border-bottom: 1px solid #fff;
 	margin: 0 2rem;
 	cursor: pointer;
+	max-width: fit-content;
+}
+
+@media only screen and (min-width: 600px){
+	.categoriesSection {
+		padding: 1rem 0;
+	}
 }

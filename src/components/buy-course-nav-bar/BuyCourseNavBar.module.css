@@ -1,0 +1,52 @@
+.bar {
+    background-color: #fff;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+}
+
+.barContent {
+    display: flex;
+    height: 100%;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.newPrice {
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.oldPrice {
+    margin-left: 1rem;
+    text-decoration: line-through;
+    color: #6a6f73;
+    font-size: 0.9rem;
+}
+
+.buyNowButton {
+    flex-grow: 1;
+    margin: 0.5rem;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 500px){
+    .newPrice {
+        font-size: 1.3rem;
+    }
+    
+    .oldPrice {
+        font-size: 1.1rem;
+    }
+}

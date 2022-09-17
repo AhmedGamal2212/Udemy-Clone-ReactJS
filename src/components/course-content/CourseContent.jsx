@@ -43,6 +43,7 @@ function CourseContent({ details }) {
 						<CourseSection
 							ExpandAll={open}
 							sectionDetails={section}
+							idx={idx}
 						/>
 					);
 					return (

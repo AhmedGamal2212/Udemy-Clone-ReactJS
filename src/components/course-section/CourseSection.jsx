@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import styles from './CourseSection.module.css';
 
-function CourseSection({ ExpandAll, sectionDetails }) {
+function CourseSection({ ExpandAll, sectionDetails, idx }) {
 	const [open, toggleOpen] = useState(false);
 	const {
 		title,
@@ -17,6 +17,10 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 	useEffect(() => {
 		toggleOpen(ExpandAll);
 	}, [ExpandAll]);
+
+	useEffect(() => {
+		toggleOpen(idx === 0 ? true : false);
+	}, []);
 
 	const handleClick = () => {
 		toggleOpen(!open);
@@ -41,7 +45,10 @@ function CourseSection({ ExpandAll, sectionDetails }) {
 			<AccordionDetails className={styles.accordionDetails}>
 				{items.map((item, idx) => {
 					return (
-						<div key={idx} className={styles.lecture}>
+						<div
+							key={idx}
+							className={styles.lecture}
+						>
 							<span
 								className={
 									(item.content_summary.includes('page')

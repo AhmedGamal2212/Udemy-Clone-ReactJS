@@ -11,7 +11,6 @@ const CoursesBox = ({ sectionData }) => {
 	} = sectionData;
 	return (
 		<section
-			ref={courses}
 			className={styles.wrapper}
 		>
 			<h2 className={styles.title}>{title}</h2>

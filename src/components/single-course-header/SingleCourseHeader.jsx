@@ -22,6 +22,8 @@ function SingleCourseHeader({ courseDetails }) {
 	return (
 		<>
 			<main className={styles.mainContainer}>
+				<div className={styles.body}>
+
 				<section className={styles.categoriesSection}>
 					<Link to='/ahmedGamal-Project2React/'>
 						<p className={styles.subCategory}>Home</p>
@@ -36,7 +38,7 @@ function SingleCourseHeader({ courseDetails }) {
 						<img
 							src={image}
 							alt={courseDetails.category}
-						/>
+							/>
 					</figure>
 					<section className={styles.mainDetails}>
 						<h3>{title}</h3>
@@ -48,7 +50,7 @@ function SingleCourseHeader({ courseDetails }) {
 								display: 'inline-block',
 								marginLeft: '7px',
 							}}
-						>
+							>
 							{subscribers} students
 						</p>
 						<p>
@@ -101,7 +103,7 @@ function SingleCourseHeader({ courseDetails }) {
 							<button
 								type='button'
 								className={styles.addToCartButton}
-							>
+								>
 								Add to cart
 							</button>
 							<p className='text-center p-3 pb-0'>
@@ -122,6 +124,7 @@ function SingleCourseHeader({ courseDetails }) {
 						</footer>
 					</section>
 				</section>
+				</div>
 			</main>
 		</>
 	);

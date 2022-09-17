@@ -1,8 +1,9 @@
 .objectivesContainer {
     width: 90%;
-    margin: 0.5rem auto;
+    margin: 2rem auto 0.5rem auto;
     border: 2px solid lightgray;
     padding: 1rem 1.5rem;
+    max-width: 45rem;
 }
 
 .header {
