@@ -4,6 +4,7 @@ import CourseObjectives from '../course-objectives/CourseObjectives';
 import LoadingSpinner from '../loading-spinner/LoadingSpinner';
 import CourseContent from '../course-content/CourseContent';
 import BuyCourseNavBar from '../buy-course-nav-bar/BuyCourseNavBar';
+import CourseRequirements from '../course-requirements/CourseRequirements';
 import styles from './CourseDetailsPage.module.css';
 
 function CourseDetailsPage({ courseDetails }) {
@@ -23,8 +24,11 @@ function CourseDetailsPage({ courseDetails }) {
 		<main>
 			<section>
 				<SingleCourseHeader courseDetails={courseDetails} />
-				<CourseObjectives courseDetails={courseDetails} />
-				<CourseContent details={additionalDetails} />
+				<div className={styles.body}>
+					<CourseObjectives courseDetails={courseDetails} />
+					<CourseContent details={additionalDetails} />
+					<CourseRequirements details={additionalDetails} />
+				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>
 		</main>
