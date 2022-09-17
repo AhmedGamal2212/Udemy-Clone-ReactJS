@@ -7,7 +7,10 @@ import { Link } from 'react-router-dom';
 function Footer() {
 	return (
 		<>
-			<footer className={styles.footer}>
+			<footer
+				id='page-footer'
+				className={styles.footer}
+			>
 				<div className={styles.linksContainer}>
 					<div className={styles.languageSwitch}>
 						<button className={styles.button}>

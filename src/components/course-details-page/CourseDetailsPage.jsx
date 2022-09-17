@@ -24,7 +24,7 @@ function CourseDetailsPage({ courseDetails }) {
 			<SingleCourseHeader courseDetails={courseDetails} />
 			<CourseObjectives courseDetails={courseDetails} />
 			<CourseContent details={additionalDetails} />
-			<BuyCourseNavBar />
+			<BuyCourseNavBar details={courseDetails} />
 		</main>
 	) : (
 		<LoadingSpinner />

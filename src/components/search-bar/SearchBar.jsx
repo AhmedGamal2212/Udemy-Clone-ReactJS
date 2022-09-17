@@ -1,13 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react';
 import '../styles.css';
 import { SetSearchTermContext } from '../../App';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
-	const setSearchTerm = useContext(SetSearchTermContext);
-
 	const [barValue, setBarValue] = useState('');
-	const [searchParams, setSearchParams] = useSearchParams();
 	const navigate = useNavigate();
 
 	const update = (e) => {

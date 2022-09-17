@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import CoursesBox from '../../components/courses-box/CoursesBox';
 import '../styles.css';
 import Tabs from '../tabs/Tabs';
@@ -9,12 +9,6 @@ function CoursesSection() {
 	const [currentTab, setCurrentTab] = useState('python_res');
 	const fetched = useContext(FetchState);
 	const coursesData = useContext(Data);
-
-	useEffect(() => {
-		if (window.location.hash.includes('courses')) {
-			window.scrollTo(0, 500);
-		}
-	});
 
 	return (
 		<div className='courses-section'>
