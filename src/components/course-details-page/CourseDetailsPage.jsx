@@ -7,6 +7,7 @@ import BuyCourseNavBar from '../buy-course-nav-bar/BuyCourseNavBar';
 import CourseRequirements from '../course-requirements/CourseRequirements';
 import styles from './CourseDetailsPage.module.css';
 import CourseDescription from '../course-description/CourseDescription';
+import InstructorsSection from '../../instructors-section/InstructorsSection';
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -30,6 +31,7 @@ function CourseDetailsPage({ courseDetails }) {
 					<CourseContent details={additionalDetails} />
 					<CourseRequirements details={additionalDetails} />
 					<CourseDescription details={additionalDetails} />
+					<InstructorsSection details={additionalDetails} />
 				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>

@@ -1,0 +1,38 @@
+.instructorName {
+	font-size: 25px;
+	text-decoration: underline;
+	color: #5624d0;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.instructorTitle {
+	font-size: 1.4rem;
+	color: #6a6f73;
+    margin: 0;
+}
+
+.instructorProfile {
+	display: flex;
+    align-items: center;
+}
+
+.instructorImage {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.profileElement {
+	margin-left: -1rem;
+	padding-top: 0.3rem;
+}
+
+.listItem {
+	padding: 0 0.5rem !important;
+}
+
+.black {
+	color: #1c1d1f;
+}
