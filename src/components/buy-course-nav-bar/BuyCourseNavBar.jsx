@@ -1,17 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './BuyCourseNavBar.module.css';
 import StarsRating from '../stars-rating/StarsRating';
 
 function BuyCourseNavBar({ details }) {
+	const [hidden, toggleHidden] = useState(true);
+
+	const hideNav = () => {
+		if (window.scrollY > 150 && hidden) {
+			toggleHidden(false);
+		}
+		if (window.scrollY <= 150) {
+			toggleHidden(true);
+		}
+	};
+
 	useEffect(() => {
 		const footer = document.querySelector('#page-footer');
 		footer.style.marginBottom = '4rem';
+		window.addEventListener('scroll', hideNav);
 	}, []);
 
 	const { title, rating, num_subscribers: subscribers } = details;
 
 	return (
-		<div className={styles.bar}>
+		<div
+			id='buyBar'
+			className={hidden ? styles.hide : styles.bar}
+		>
 			<div className={styles.barContent}>
 				<div className={styles.barLeftContent}>
 					<p className={styles.courseTitle}>{title}</p>

@@ -78,6 +78,10 @@
 	border: none;
 }
 
+.hide {
+	display: none;
+}
+
 @media only screen and (min-width: 500px) {
 	.newPrice {
 		font-size: 1.3rem;
@@ -125,6 +129,5 @@
 
 	.bar {
 		top: 0;
-		z-index: 0;
 	}
 }

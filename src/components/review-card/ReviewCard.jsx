@@ -7,10 +7,7 @@ import { ThumbUpOffAlt, ThumbDownOffAlt } from '@mui/icons-material';
 function ReviewCard({ review }) {
 	const { created_formatted_with_time_since: since, content_html: content } =
 		review;
-
 	const { user } = review;
-
-	console.log(user);
 	const { public_display_name: username } = user;
 
 	return (
