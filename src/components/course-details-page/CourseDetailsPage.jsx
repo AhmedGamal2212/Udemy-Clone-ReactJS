@@ -10,6 +10,7 @@ import CourseDescription from '../course-description/CourseDescription';
 import InstructorsSection from '../../instructors-section/InstructorsSection';
 import ThisCourseIncludes from '../this-course-includes/ThisCourseIncludes';
 import StudentFeedback from '../student-feedback/StudentFeedback';
+import ReviewsSection from '../reviews-section/ReviewsSection';
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -38,6 +39,7 @@ function CourseDetailsPage({ courseDetails }) {
 					<CourseDescription details={additionalDetails} />
 					<InstructorsSection details={additionalDetails} />
 					<StudentFeedback details={additionalDetails} />
+					<ReviewsSection details={additionalDetails} />
 				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>

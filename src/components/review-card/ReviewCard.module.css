@@ -1,0 +1,44 @@
+.mainContainer {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d1d7dc;
+}
+
+.userName {
+	font-weight: 700;
+	font-size: 1.3rem;
+    margin: 0;
+}
+
+.rating {
+	display: flex;
+}
+
+.wrapper {
+	margin-right: 0.5rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    color: #000;
+}
+
+.buttonIcon {
+    background:transparent;
+    border-radius: 100%;
+    padding: 0.7rem;
+    border: 1px solid #000;
+    margin-right: 0.5rem;
+}
+
+.buttonIcon:hover {
+    background-color: whitesmoke;
+}
+
+.report {
+    text-decoration: underline;
+    cursor: pointer;
+}
