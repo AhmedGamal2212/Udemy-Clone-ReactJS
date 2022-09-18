@@ -11,7 +11,7 @@ function BuyCourseNavBar({ details }) {
 	const { title, rating, num_subscribers: subscribers } = details;
 
 	return (
-		<nav className={styles.bar}>
+		<div className={styles.bar}>
 			<div className={styles.barContent}>
 				<div className={styles.barLeftContent}>
 					<p className={styles.courseTitle}>{title}</p>
@@ -38,7 +38,7 @@ function BuyCourseNavBar({ details }) {
 					</button>
 				</div>
 			</div>
-		</nav>
+		</div>
 	);
 }
 

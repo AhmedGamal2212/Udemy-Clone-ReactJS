@@ -1,14 +1,14 @@
 import React from 'react';
-import '../styles.css';
+import styles from './NavBar.module.css';
 import SearchBar from '../search-bar/SearchBar';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
 	return (
 		<>
-			<nav>
-				<ul>
-					<li className='menu-btn'>
+			<nav className={styles.nav}>
+				<ul className={styles.ul}>
+					<li className={styles.menuButton}>
 						<button
 							type='button'
 							name='menu-icon'
@@ -16,7 +16,7 @@ function NavBar() {
 							<i className='fa-solid fa-bars'></i>
 						</button>
 					</li>
-					<li className='logo'>
+					<li className={styles.logo}>
 						<Link to='/ahmedGamal-Project2React/'>
 							<img
 								src='https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg'
@@ -24,7 +24,7 @@ function NavBar() {
 							/>
 						</Link>
 					</li>
-					<li className='categories-btn'>
+					<li className={styles.categoriesButton}>
 						<button
 							type='button'
 							name='categories-button'
@@ -32,9 +32,8 @@ function NavBar() {
 							Categories
 						</button>
 					</li>
-					{/* Add SearchBar here */}
 					<SearchBar />
-					<li className='search-btn'>
+					<li className={styles.searchButton}>
 						<button
 							type='button'
 							name='search-button'
@@ -42,15 +41,15 @@ function NavBar() {
 							<i className='fa-solid fa-magnifying-glass'></i>
 						</button>
 					</li>
-					<li className='udemy-business-btn'>
+					<li className={styles.udemyBusinessButton}>
 						<button
 							type='button'
 							name='udemy-business'
 						>
-							<span>Udemy Business</span>
+							Udemy Business
 						</button>
 					</li>
-					<li className='teach-on-udemy-btn'>
+					<li className={styles.teachOnUdemyButton}>
 						<button
 							type='button'
 							name='teach-on-udemy-button'
@@ -58,7 +57,7 @@ function NavBar() {
 							Teach on Udemy
 						</button>
 					</li>
-					<li className='cart-btn'>
+					<li className={styles.cartButton}>
 						<button
 							type='button'
 							name='cart-button'
@@ -66,7 +65,7 @@ function NavBar() {
 							<i className='fa-solid fa-cart-shopping'></i>
 						</button>
 					</li>
-					<li className='login-btn'>
+					<li className={styles.loginButton}>
 						<button
 							type='button'
 							name='login-button'
@@ -74,7 +73,7 @@ function NavBar() {
 							Log in
 						</button>
 					</li>
-					<li className='signup-btn'>
+					<li className={styles.signupButton}>
 						<button
 							type='button'
 							name='singup-button'
@@ -82,7 +81,7 @@ function NavBar() {
 							Sign up
 						</button>
 					</li>
-					<li className='lang-btn'>
+					<li className={styles.langButton}>
 						<button
 							type='button'
 							name='language-button'

@@ -1,0 +1,43 @@
+.searchBar {
+	flex-grow: 1;
+	display: none !important;
+	min-width: 20rem !important;
+}
+
+.form {
+	border: 1px black solid;
+	border-radius: 70px;
+	background: whitesmoke;
+	display: flex;
+	align-items: center;
+	height: 3rem;
+	width: 80%;
+}
+
+.form i {
+	display: block;
+	color: grey;
+	font-size: medium;
+}
+
+.form button {
+	border: none;
+	background: transparent;
+	min-width: 50px;
+}
+
+.form input[type='text'] {
+	outline: transparent;
+	border: none;
+	background-color: transparent;
+	font-size: 1rem;
+	width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+	.searchBar {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+	}
+}

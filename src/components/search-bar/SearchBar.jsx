@@ -1,6 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react';
-import '../styles.css';
-import { SetSearchTermContext } from '../../App';
+import React, { useState } from 'react';
+import styles from './SearchBar.module.css';
 import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
@@ -27,12 +26,15 @@ function SearchBar() {
 	};
 
 	return (
-		<li className='search-bar'>
-			<form action=''>
+		<li className={styles.searchBar}>
+			<form
+				action=''
+				className={styles.form}
+			>
 				<button
 					onClick={() => searchPressed(barValue)}
 					type='button'
-					className='search-icon'
+					className={styles.searchIcon}
 				>
 					<i className='fa-solid fa-magnifying-glass'></i>
 				</button>
@@ -40,7 +42,6 @@ function SearchBar() {
 					onKeyDown={keySearch}
 					type='text'
 					placeholder='Search for anything'
-					className='bar'
 					onChange={update}
 				/>
 			</form>

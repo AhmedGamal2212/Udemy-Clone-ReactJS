@@ -1,0 +1,40 @@
+.coursesSection {
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.coursesSectionTitle {
+	font-weight: bold;
+	font-size: 1.8rem !important;
+}
+
+.coursesSection h2 {
+	margin: 0.6rem 0;
+}
+
+.coursesSection p {
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.coursesSection {
+		padding: 3rem;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 700px){
+    .coursesSectionTitle {
+        font-size: 2.5rem !important;
+    }
+    .coursesSection {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 921px) {
+	.coursesSectionTitle {
+		font-size: 2.5rem !important;
+	}
+}

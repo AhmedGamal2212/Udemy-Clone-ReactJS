@@ -1,0 +1,24 @@
+.span {
+	font-size: 1rem;
+	margin-right: 1rem;
+	color: grey;
+	cursor: pointer;
+}
+
+.span:hover {
+	color: black;
+}
+
+.input[type='radio'] {
+	display: none;
+}
+
+.input[type='radio']:checked + .span {
+	color: black;
+}
+
+@media only screen and (min-width: 800px){
+	.span {
+		font-size: 1.3rem;
+	}
+}

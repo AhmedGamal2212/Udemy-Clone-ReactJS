@@ -7,6 +7,10 @@
 	margin: 0 auto;
 }
 
+.title {
+	font-weight: 700;
+}
+
 .categoriesSection {
 	padding: 1rem;
 	font-size: 0.8em;
@@ -34,6 +38,7 @@
 	margin-left: 7px;
 	text-decoration: underline;
 	color: #cec0fc;
+	cursor: pointer;
 }
 
 .lastUpdate,
@@ -67,6 +72,7 @@
 	font-size: 1rem;
 	margin-right: 0.5rem;
 }
+
 
 .offerSize {
 	margin-left: 5px;
@@ -117,5 +123,36 @@
 @media only screen and (min-width: 600px) {
 	.categoriesSection {
 		padding: 1rem 0;
+	}
+}
+
+@media only screen and (min-width: 1080px){
+	.title {
+		font-size: 2rem;
+	}
+
+	.lastUpdateLangWrapper {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.lastUpdateLangWrapper p {
+		margin: 0 0.5rem
+	}
+
+	.lastUpdateLangWrapper p:first-child {
+		margin-left: 0;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.categoriesSection {
+		padding-left: 0.5rem;
+	}
+
+	.body {
+		margin: 0 auto 0 10%;
 	}
 }

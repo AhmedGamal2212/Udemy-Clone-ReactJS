@@ -1,0 +1,77 @@
+.new-to-udemy {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f9f9;
+}
+
+.new-to-udemy img {
+	width: 100%;
+	height: auto;
+}
+.new-to-udemy figure {
+	width: 100%;
+	height: auto;
+}
+
+.new-to-udemy article {
+	padding: 1.6rem;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 6px rgb(225, 221, 221);
+}
+
+.new-to-udemy p:first-child {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.new-to-udemy p:last-child {
+	font-weight: lighter;
+	color: dimgrey;
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.new-to-udemy p:first-child {
+		font-size: 2.1rem;
+	}
+
+	.new-to-udemy p:last-child {
+		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.new-to-udemy {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.new-to-udemy article,
+	.new-to-udemy figure {
+		width: 40%;
+	}
+
+	.new-to-udemy article {
+		max-width: 35rem;
+	}
+
+	.new-to-udemy p:first-child {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 921px) {
+	.new-to-udemy {
+		width: 90%;
+	}
+
+	.new-to-udemy p:first-child {
+		font-size: 3rem;
+	}
+}

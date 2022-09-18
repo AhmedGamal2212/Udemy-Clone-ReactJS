@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles.css";
 import Tab from "../tab/Tab";
 import htmlValues from "../../htmlValues";
+import styles from './Tabs.module.css'
 
 function Tabs({ setCurrentTab }) {
   const categories = [
@@ -18,7 +18,7 @@ function Tabs({ setCurrentTab }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <>
-      <fieldset className="courses-radio">
+      <fieldset className={styles.coursesRadio}>
         {tabs.map((category, idx) => {
           return (
             <Tab

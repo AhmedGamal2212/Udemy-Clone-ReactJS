@@ -20,7 +20,7 @@ function CourseSection({ ExpandAll, sectionDetails, idx }) {
 
 	useEffect(() => {
 		toggleOpen(idx === 0 ? true : false);
-	}, []);
+	}, [idx]);
 
 	const handleClick = () => {
 		toggleOpen(!open);
