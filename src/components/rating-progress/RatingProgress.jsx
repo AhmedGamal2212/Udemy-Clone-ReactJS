@@ -17,6 +17,7 @@ function RatingProgress({ percentage, starsCount }) {
 					fontSize='1.1rem'
 				/>
 			</div>
+			<span className={styles.percentage}>{Math.round(percentage)}%</span>
 		</div>
 	);
 }

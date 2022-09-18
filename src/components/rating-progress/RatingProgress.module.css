@@ -21,3 +21,9 @@
     display: flex;
     justify-content: center;
 }
+
+.percentage {
+    margin-left: -1rem;
+    text-decoration: underline;
+    color: #5624d0;
+}
