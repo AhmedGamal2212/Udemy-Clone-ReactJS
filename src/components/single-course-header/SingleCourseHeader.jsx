@@ -42,6 +42,10 @@ function SingleCourseHeader({ courseDetails }) {
 						<section className={styles.mainDetails}>
 							<h1 style={{ fontWeight: 700 }}>{title}</h1>
 							<p>{headline}</p>
+							<p className={styles.rating}>
+								{rating.toPrecision(2)}
+							</p>
+
 							<StarsRating rating={rating} />
 							<p className={styles.linkLikeText}>
 								(2,305 ratings)

@@ -1,77 +1,85 @@
 .courseWrapper {
-    width: 100%;
-    padding: 0.5rem;
-    flex-grow: 1;
+	width: 100%;
+	padding: 0.5rem;
+	flex-grow: 1;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 .card {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .card:hover {
-    background-color: whitesmoke;
-    cursor: pointer;
+	background-color: whitesmoke;
+	cursor: pointer;
 }
 
 .body {
-    padding: 0.5rem;
+	padding: 0.5rem;
 }
 
 .wrapper {
-    margin: 0;
+	margin: 0;
 }
 
 .title {
-    font-weight: 900;
-    margin: 0.5rem 0;
-    font-size: 20px !important;
+	font-weight: 900;
+	margin: 0.5rem 0;
+	font-size: 20px !important;
 }
 
 .instructors {
-    color: grey;
-    margin: 0.5rem 0;
-    font-size: medium !important;
+	color: grey;
+	margin: 0.5rem 0;
+	font-size: medium !important;
 }
 
 .title,
 .instructors {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 
 .price {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
 }
 
-@media only screen and (min-width: 700px){
-    .courseWrapper {
-        width: 50%;
-        max-width: 50%;
-    }
+.rating {
+	display: inline;
+	font-weight: bold;
+	color: #f3ca8c;
+	font-size: 1rem;
+	margin-right: 0.5rem;
 }
 
-@media only screen and (min-width: 850px){
-    .courseWrapper {
-        width: 30%;
-        max-width: 30%;
-    }
+@media only screen and (min-width: 700px) {
+	.courseWrapper {
+		width: 50%;
+		max-width: 50%;
+	}
 }
 
-@media only screen and (min-width: 1200px){
-    .courseWrapper {
-        width: 25%;
-        max-width: 25%;
-    }
+@media only screen and (min-width: 850px) {
+	.courseWrapper {
+		width: 30%;
+		max-width: 30%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.courseWrapper {
+		width: 25%;
+		max-width: 25%;
+	}
 }

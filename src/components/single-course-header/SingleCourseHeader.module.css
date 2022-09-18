@@ -60,6 +60,14 @@
 	text-decoration: line-through;
 }
 
+.rating {
+	display: inline;
+	font-weight: bold;
+	color: #f3ca8c;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+}
+
 .offerSize {
 	margin-left: 5px;
 }
@@ -106,7 +114,7 @@
 	max-width: fit-content;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
 	.categoriesSection {
 		padding: 1rem 0;
 	}

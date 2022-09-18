@@ -9,6 +9,7 @@ import styles from './CourseDetailsPage.module.css';
 import CourseDescription from '../course-description/CourseDescription';
 import InstructorsSection from '../../instructors-section/InstructorsSection';
 import ThisCourseIncludes from '../this-course-includes/ThisCourseIncludes';
+import StudentFeedback from '../student-feedback/StudentFeedback';
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -36,6 +37,7 @@ function CourseDetailsPage({ courseDetails }) {
 					<CourseRequirements details={additionalDetails} />
 					<CourseDescription details={additionalDetails} />
 					<InstructorsSection details={additionalDetails} />
+					<StudentFeedback details={additionalDetails} />
 				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>

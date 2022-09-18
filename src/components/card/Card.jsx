@@ -47,6 +47,7 @@ const Card = ({ course }) => {
 					<section className={styles.body}>
 						<p className={styles.title}>{title}</p>
 						<p className={styles.instructors}>{instructors}</p>
+						<p className={styles.rating}>{rating.toPrecision(2)}</p>
 						<StarsRating rating={rating} />
 						<p className={styles.price}>$15</p>
 					</section>

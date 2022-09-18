@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+.bar {
+    width: 70%;
+    height: 0.7rem;
+    background-color: #d1d7dc;
+}
+
+.progress {
+    background-color: #6a6f73;
+    height: 0.7rem;
+}
+
+.stars {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
