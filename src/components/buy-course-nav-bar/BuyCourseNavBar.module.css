@@ -129,5 +129,6 @@
 
 	.bar {
 		top: 0;
+		padding-left: 1rem;
 	}
 }

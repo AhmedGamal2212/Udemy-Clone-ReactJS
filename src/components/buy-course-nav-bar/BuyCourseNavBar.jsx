@@ -14,10 +14,18 @@ function BuyCourseNavBar({ details }) {
 		}
 	};
 
-	useEffect(() => {
+	const editMargin = () => {
 		const footer = document.querySelector('#page-footer');
-		footer.style.marginBottom = '4rem';
+		if(window.innerWidth >= 1080){
+			footer.style.marginBottom = 0;
+		}else {
+			footer.style.marginBottom = '4rem';
+		}
+	}
+
+	useEffect(() => {
 		window.addEventListener('scroll', hideNav);
+		window.addEventListener('resize', editMargin);
 	}, []);
 
 	const { title, rating, num_subscribers: subscribers } = details;
