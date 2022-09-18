@@ -36,18 +36,22 @@ function SearchReviewSection({ setSearchTerm, setStars }) {
 						style={{
 							flexGrow: 1,
 							border: '1px solid black',
-							outline: 'none'
+							outline: 'none',
 						}}
 						type='search'
 						variant='filled'
 						color='white'
 						placeholder='Search reviews'
-                        onInput={(e) => setSearchTerm(e.target.value)}
+						onInput={(e) => setSearchTerm(e.target.value)}
 					/>
 					<IconButton
 						type='button'
 						aria-label='search'
-						style={{ padding: '0', height: '100%', width: '2.5rem' }}
+						style={{
+							padding: '0',
+                            height: '100%',
+							width: '2.8rem',
+						}}
 					>
 						<Search
 							style={{
