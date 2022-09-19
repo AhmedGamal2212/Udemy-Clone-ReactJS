@@ -16,7 +16,7 @@ function HomePage() {
 		)
 			window.scrollTo(0, 0);
 		else if (pathName.includes('#courses')) {
-			const section = document.querySelector('.courses-section');
+			const section = document.querySelector('#courses-section');
 			section.scrollIntoView({
 				behavior: 'smooth',
 				block: 'start',

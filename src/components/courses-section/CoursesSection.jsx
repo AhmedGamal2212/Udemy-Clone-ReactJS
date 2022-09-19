@@ -11,7 +11,7 @@ function CoursesSection() {
 	const coursesData = useContext(Data);
 
 	return (
-		<div className={styles.coursesSection}>
+		<div id='courses-section' className={styles.coursesSection}>
 			<h2 className={styles.coursesSectionTitle}>
 				A broad selection of courses
 			</h2>
