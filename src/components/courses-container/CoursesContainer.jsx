@@ -10,7 +10,7 @@ const CoursesContainer = ({ courses }) => {
 		: '';
 
 	useEffect(() => {
-		const coursesSection = document.querySelector('.courses-section');
+		const coursesSection = document.querySelector('#courses-section');
 		if (searchParam.get('filter'))
 			coursesSection.scrollIntoView({
 				behavior: 'smooth',
