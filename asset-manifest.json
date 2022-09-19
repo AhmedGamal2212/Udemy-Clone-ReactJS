@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ahmedGamal-Project2React/static/css/main.8272ad3a.css",
-    "main.js": "/ahmedGamal-Project2React/static/js/main.2493dfcf.js",
+    "main.js": "/ahmedGamal-Project2React/static/js/main.87f0eb73.js",
     "static/js/787.7fbb78d4.chunk.js": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js",
     "index.html": "/ahmedGamal-Project2React/index.html",
     "main.8272ad3a.css.map": "/ahmedGamal-Project2React/static/css/main.8272ad3a.css.map",
-    "main.2493dfcf.js.map": "/ahmedGamal-Project2React/static/js/main.2493dfcf.js.map",
+    "main.87f0eb73.js.map": "/ahmedGamal-Project2React/static/js/main.87f0eb73.js.map",
     "787.7fbb78d4.chunk.js.map": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8272ad3a.css",
-    "static/js/main.2493dfcf.js"
+    "static/js/main.87f0eb73.js"
   ]
 }
