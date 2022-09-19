@@ -11,6 +11,8 @@ import InstructorsSection from '../../instructors-section/InstructorsSection';
 import ThisCourseIncludes from '../this-course-includes/ThisCourseIncludes';
 import StudentFeedback from '../student-feedback/StudentFeedback';
 import ReviewsSection from '../reviews-section/ReviewsSection';
+import Sticky from 'react-stickynode';
+import StickyCardContent from '../sticky-card-content/StickyCardContent';
 
 function CourseDetailsPage({ courseDetails }) {
 	const [fetched, setAsFetched] = useState(false);
@@ -28,7 +30,15 @@ function CourseDetailsPage({ courseDetails }) {
 	return fetched ? (
 		<main>
 			<section>
-				<SingleCourseHeader courseDetails={courseDetails} />
+				<Sticky
+					top={0}
+					bottomBoundary='#boundary'
+					innerZ={300}
+					enabled={true}
+				>
+					<StickyCardContent details={courseDetails} additionalDetails={additionalDetails} />
+				</Sticky>
+				<SingleCourseHeader courseDetails={courseDetails} additionalDetails={additionalDetails} />
 				<div className={styles.body}>
 					<CourseObjectives courseDetails={courseDetails} />
 					<div className={styles.includesSection}>
@@ -39,7 +49,9 @@ function CourseDetailsPage({ courseDetails }) {
 					<CourseDescription details={additionalDetails} />
 					<InstructorsSection details={additionalDetails} />
 					<StudentFeedback details={additionalDetails} />
-					<ReviewsSection details={additionalDetails} />
+					<div id='boundary'>
+						<ReviewsSection details={additionalDetails} />
+					</div>
 				</div>
 				<BuyCourseNavBar details={courseDetails} />
 			</section>

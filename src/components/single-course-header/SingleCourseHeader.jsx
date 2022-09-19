@@ -3,8 +3,10 @@ import styles from './SingleCourseHeader.module.css';
 import './iconStyle.css';
 import { Link } from 'react-router-dom';
 import StarsRating from '../stars-rating/StarsRating';
+import Sticky from 'react-stickynode';
+import StickyCardContent from '../sticky-card-content/StickyCardContent';
 
-function SingleCourseHeader({ courseDetails }) {
+function SingleCourseHeader({ courseDetails, additionalDetails }) {
 	const {
 		title,
 		image_750x422: image,

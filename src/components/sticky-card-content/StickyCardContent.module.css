@@ -1,0 +1,86 @@
+.mainContainer {
+    display: none;
+    margin-left: 65rem;
+    width: 20rem;
+    background-color: #fff;
+}
+
+.cardBody {
+    padding: 0.5rem;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.button,
+.footerButton {
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+    height: 3rem;
+}
+
+.addToCartButton {
+    border: none;
+    color: #fff;
+    background-color: #a435f0;
+    font-weight: bold;
+}
+
+.addToCartButton:hover {
+    background-color: #832fbb;
+}
+
+.buyNowButton,
+.tryUdemyBusinessButton {
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.buyNowButton:hover,
+.tryUdemyBusinessButton:hover {
+    background-color: whitesmoke;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8f96a3;
+}
+
+.footerButton {
+    width: fit-content;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    padding: 0 auto;
+    height: fit-content;
+}
+
+.trainingSectionTitle {
+    margin: 0 0 0.2rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.trainingSectionText {
+    margin-left: 0.3rem;
+}
+
+.tryUdemyBusinessButton {
+    width: 100%;
+    height: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1080px){
+    .mainContainer{
+        display: initial;
+    }
+}
