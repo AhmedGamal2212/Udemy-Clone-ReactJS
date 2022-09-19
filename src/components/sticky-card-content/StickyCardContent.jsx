@@ -22,7 +22,7 @@ function StickyCardContent({ details, additionalDetails }) {
 	return (
 		<main
 			className={styles.mainContainer}
-			style={{ position: 'absolute', marginTop: hidden ? '1rem' : '0' }}
+			style={{ position: 'absolute', marginTop: hidden ? '1rem' : '0', boxShadow: hidden ? '0 10px 10px #c2c9d6' : 'none' }}
 		>
 			<figure className={hidden ? styles.hide : styles.imageWrapper}>
 				<img
