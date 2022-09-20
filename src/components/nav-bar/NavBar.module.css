@@ -23,7 +23,7 @@
 .langButton,
 .teachOnUdemyButton,
 .udemyBusinessButton {
-	font-size: 0.8rem !important;
+	/* font-size: 0.8rem !important; */
 	display: none !important;
 }
 
@@ -144,7 +144,7 @@
 	.teachOnUdemyButton button {
 		background-color: transparent;
 		border: none;
-		font-size: 0.8rem !important;
+		/* font-size: 0.8rem !important; */
 		min-width: 8rem;
 		cursor: pointer;
 	}
@@ -166,7 +166,7 @@
 		background-color: transparent;
 		border: none;
 		min-width: 8rem !important;
-		font-size: 0.8rem !important;
+		/* font-size: 0.8rem !important; */
 		cursor: pointer;
 	}
 
