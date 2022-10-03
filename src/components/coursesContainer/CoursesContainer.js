@@ -3,7 +3,7 @@ import Card from '../card/Card';
 import styles from './CoursesContainer.module.css'
 
 const CoursesContainer = ( { courses } ) => {
-    const coursesCards = props.courses.map((course) => {
+    const coursesCards = courses.map((course) => {
         return <Card key={course.id} course={course}></Card>;
     });
     return (
