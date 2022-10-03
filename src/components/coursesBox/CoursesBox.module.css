@@ -1,0 +1,46 @@
+.title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.title,
+.description {
+    padding-left: 6px;
+}
+
+.wrapper {
+    margin: 5% auto;
+    width: 80%;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.exploreButton {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.exploreButton:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+@media only screen and (min-width: 500px){
+    .description {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .wrapper {
+        padding: 4rem;
+    }
+}
