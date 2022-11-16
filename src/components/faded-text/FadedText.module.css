@@ -1,0 +1,46 @@
+.dotIcon {
+	font-size: 6px;
+	margin-right: 1rem;
+}
+
+.point {
+	margin-left: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.descriptionContentFaded {
+	height: 15rem;
+	overflow: hidden;
+}
+
+.descriptionContentFaded:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(transparent 150px, white);
+}
+
+.showMoreButton {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #5624d0;
+	background-color: transparent;
+	border: none;
+}
+
+.showMoreButton:hover {
+	color: #6f42c1;
+}
+
+@media only screen and (min-width: 600px) {
+	.showMoreButton {
+		font-size: 1.4rem;
+	}
+}

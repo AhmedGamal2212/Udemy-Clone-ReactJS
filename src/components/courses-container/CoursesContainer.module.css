@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.emptyCoursesList {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px !important;
+}

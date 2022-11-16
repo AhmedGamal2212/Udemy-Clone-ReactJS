@@ -1,0 +1,73 @@
+.accordion {
+	box-shadow: none !important;
+	width: 100%;
+	border-radius: 0 !important;
+}
+
+.accordionSummary {
+	flex-direction: row-reverse;
+	background-color: #f7f9fa !important;
+}
+
+.expandIcon {
+	margin-right: 0.5rem;
+	color: black;
+}
+
+.summaryText {
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.accordionDetails {
+	border-top: 1px solid #d1d7dc;
+}
+
+.lecture {
+	display: flex;
+	margin: 0.7rem 0;
+}
+
+.lectureTitle {
+	padding-left: 1rem;
+	flex-grow: 1;
+}
+
+.previewedLecture {
+	text-decoration: underline;
+	color: #5624d0;
+	cursor: pointer;
+	flex-grow: 1;
+	padding-left: 1rem;
+}
+
+.preview {
+	padding: 0 0.5rem;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #5624d0;
+}
+
+.preview:hover {
+	color: #4c27aa;
+}
+
+.preview,
+.hide {
+	display: none;
+}
+
+.lecture .hide {
+	color: #6a6f73;
+}
+
+.lectureIcon {
+	padding-top: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+	.preview,
+	.hide {
+		display: initial;
+	}
+}

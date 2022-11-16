@@ -1,0 +1,24 @@
+.starsOuter {
+	display: inline-block;
+	position: relative;
+	font-family: FontAwesome;
+	font-size: small;
+}
+
+.starsOuter::before {
+	content: '\f006 \f006 \f006 \f006 \f006';
+}
+
+.starsInner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+}
+
+.starsInner::before {
+	content: '\f005 \f005 \f005 \f005 \f005';
+	color: #e59819;
+}

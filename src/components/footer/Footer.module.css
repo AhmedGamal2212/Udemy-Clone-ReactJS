@@ -1,0 +1,66 @@
+.footer {
+    padding: 1rem;
+}
+
+.button {
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #fff !important;
+    padding: 0 1.6rem;
+    height: 2.5rem;
+    min-width: 9rem;
+}
+
+.footer, 
+.button {
+    background-color: #1c1d1f;
+    border-top: 1px solid #3e4143;
+    color: white;
+}
+
+.button span {
+    margin-left: 5px;
+}
+
+.button:hover {
+    background-color: rgb(65, 70, 75); 
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.languageSwitch {
+    padding: 1.5rem 0;
+}
+
+.logoCopyRights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 700px){
+    .linksContainer {
+        flex-direction: row;
+    }
+
+    .languageSwitch {
+        order: 1;
+    }
+
+    .languageSwitch {
+        flex-grow: 1;
+    }
+
+    .logoCopyRights {
+        flex-direction: row;
+    }
+
+    .copyRights {
+        padding: 2rem 0;
+    }
+}

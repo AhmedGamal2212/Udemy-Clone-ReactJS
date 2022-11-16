@@ -1,0 +1,158 @@
+.mainContainer {
+	background-color: #1c1d1f;
+}
+
+.body {
+	max-width: 45rem;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 700;
+}
+
+.categoriesSection {
+	padding: 1rem;
+	font-size: 0.8em;
+}
+
+.subCategory {
+	display: inline-block;
+	margin: 0 6px;
+	font-weight: bold;
+	color: #cec0fc;
+}
+
+.sub-category-icon {
+	color: #cec0fc;
+}
+
+.mainDetails {
+	padding: 1rem;
+	background-color: #1c1d1f;
+	color: #fff;
+}
+
+.linkLikeText {
+	display: inline-block;
+	margin-left: 7px;
+	text-decoration: underline;
+	color: #cec0fc;
+	cursor: pointer;
+}
+
+.lastUpdate,
+.lastUpdateDate {
+	margin-left: 5px;
+}
+
+.languages {
+	margin-left: 5px;
+}
+
+.headerPrice {
+	display: flex;
+	align-items: center;
+}
+
+.bigPrice {
+	font-weight: 900;
+	font-size: 35px;
+}
+
+.smallPrice {
+	margin-left: 5px;
+	text-decoration: line-through;
+}
+
+.rating {
+	display: inline;
+	font-weight: bold;
+	color: #f3ca8c;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+}
+
+
+.offerSize {
+	margin-left: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.offerText {
+	margin-left: 5px;
+}
+
+.timeRemaining {
+	color: #b32d0f;
+}
+
+.previewFooter {
+	display: flex;
+	flex-direction: column;
+}
+
+.addToCartButton {
+	border: none;
+	background-color: #a435f0;
+	color: #fff;
+	cursor: pointer;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+.previewFooterButtons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerButton {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	margin: 0 2rem;
+	cursor: pointer;
+	max-width: fit-content;
+}
+
+@media only screen and (min-width: 600px) {
+	.categoriesSection {
+		padding: 1rem 0;
+	}
+}
+
+@media only screen and (min-width: 1080px){
+	.title {
+		font-size: 2rem;
+	}
+
+	.lastUpdateLangWrapper {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.lastUpdateLangWrapper p {
+		margin: 0 0.5rem
+	}
+
+	.lastUpdateLangWrapper p:first-child {
+		margin-left: 0;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.categoriesSection {
+		padding-left: 0.5rem;
+	}
+
+	.body {
+		margin: 0 auto 0 10%;
+	}
+}

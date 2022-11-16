@@ -1,0 +1,20 @@
+.objectivesContainer {
+    margin: 0 auto 1rem auto;
+    border: 2px solid lightgray;
+    padding: 1rem 1.5rem;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.objectives {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.objective {
+    flex-grow: 1;
+    margin-right: 10px;
+}
