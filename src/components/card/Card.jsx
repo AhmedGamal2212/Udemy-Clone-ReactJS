@@ -24,7 +24,7 @@ const Card = ({ course }) => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
-		navigate(`/ahmedGamal-Project2React/courses/${course.id}`);
+		navigate(`/Udemy-Clone-ReactJS/courses/${course.id}`);
 	};
 
 	return (
