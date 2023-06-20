@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ahmedGamal-Project2React/static/css/main.4fdb5189.css",
-    "main.js": "/ahmedGamal-Project2React/static/js/main.a357b411.js",
-    "static/js/787.7fbb78d4.chunk.js": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js",
-    "index.html": "/ahmedGamal-Project2React/index.html",
-    "main.4fdb5189.css.map": "/ahmedGamal-Project2React/static/css/main.4fdb5189.css.map",
-    "main.a357b411.js.map": "/ahmedGamal-Project2React/static/js/main.a357b411.js.map",
-    "787.7fbb78d4.chunk.js.map": "/ahmedGamal-Project2React/static/js/787.7fbb78d4.chunk.js.map"
+    "main.css": "/Udemy-Clone-ReactJS/static/css/main.4fdb5189.css",
+    "main.js": "/Udemy-Clone-ReactJS/static/js/main.f1509900.js",
+    "static/js/787.7fbb78d4.chunk.js": "/Udemy-Clone-ReactJS/static/js/787.7fbb78d4.chunk.js",
+    "index.html": "/Udemy-Clone-ReactJS/index.html",
+    "main.4fdb5189.css.map": "/Udemy-Clone-ReactJS/static/css/main.4fdb5189.css.map",
+    "main.f1509900.js.map": "/Udemy-Clone-ReactJS/static/js/main.f1509900.js.map",
+    "787.7fbb78d4.chunk.js.map": "/Udemy-Clone-ReactJS/static/js/787.7fbb78d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fdb5189.css",
-    "static/js/main.a357b411.js"
+    "static/js/main.f1509900.js"
   ]
 }
