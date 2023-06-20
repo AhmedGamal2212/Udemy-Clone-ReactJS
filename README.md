@@ -1,6 +1,6 @@
 # Udemy-Clone-ReactJS
 
-This is a project that aims to clone the Udemy website using ReactJS. It is a learning project that demonstrates how to use various React features and libraries to create a dynamic and responsive web application.
+This is a project that aims to clone the Udemy website using ReactJS as the main framework for building user interfaces. It is a learning project that showcases how to use various React features and libraries such as React Router, React Bootstrap and React Icons to create a dynamic and responsive web application that mimics the functionality and design of the original website. The project also focuses on building more complex UI components using CSS modules, which are a way of modularizing and scoping CSS styles to specific components, avoiding conflicts and improving maintainability.
 
 ## Features
 
