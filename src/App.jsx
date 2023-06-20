@@ -37,11 +37,11 @@ const App = () => {
 							<NavBar />
 							<Routes>
 								<Route
-									path='/ahmedGamal-Project2React'
+									path='/Udemy-Clone-ReactJS'
 									element={<HomePage />}
 								></Route>
 								<Route
-									path='/ahmedGamal-Project2React/courses/:courseId'
+									path='/Udemy-Clone-ReactJS/courses/:courseId'
 									element={<SingleCoursePage />}
 								></Route>
 								<Route
