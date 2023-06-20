@@ -27,7 +27,7 @@ function Footer() {
 					))}
 				</div>
 				<div className={styles.logoCopyRights}>
-					<Link to='/ahmedGamal-Project2React/'>
+					<Link to='/Udemy-Clone-ReactJS/'>
 						<img
 							src={require('../../materials/logo-udemy.png')}
 							alt='logo'
