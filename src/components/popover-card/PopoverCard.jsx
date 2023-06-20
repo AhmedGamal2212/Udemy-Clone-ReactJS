@@ -18,7 +18,7 @@ function PopoverCard({ course }) {
 
   return (
     <div className={styles.cardWrapper}>
-      <Link to={`/ahmedGamal-Project2React/courses/${course.id}`} className={styles.courseTitle}>
+      <Link to={`/Udemy-Clone-ReactJS/courses/${course.id}`} className={styles.courseTitle}>
         <p>{course.title}</p>
       </Link>
       <p className={styles.date}>
