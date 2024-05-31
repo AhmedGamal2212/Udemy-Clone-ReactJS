@@ -24,11 +24,11 @@ function SingleCourseHeader({courseDetails, additionalDetails}) {
             <main className={styles.mainContainer}>
                 <div className={styles.body}>
                     <section className={styles.categoriesSection}>
-                        <Link to='/ahmedGamal-Project2React/'>
+                        <Link to='/Udemy-Clone-ReactJS/'>
                             <p className={styles.subCategory}>Home</p>
                         </Link>
                         <i className='fa-solid fa-chevron-right sub-category-arrow'></i>
-                        <Link to='/ahmedGamal-Project2React#courses'>
+                        <Link to='/Udemy-Clone-ReactJS#courses'>
                             <p className={styles.subCategory}>courses</p>
                         </Link>
                     </section>
