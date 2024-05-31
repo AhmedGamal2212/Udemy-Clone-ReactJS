@@ -13,7 +13,7 @@ function SearchBar() {
 
     const searchPressed = (barValue) => {
         navigate({
-            pathname: '/ahmedGamal-Project2React/',
+            pathname: '/Udemy-Clone-ReactJS/',
             search: barValue ? `filter=${barValue}` : '',
         });
     };
