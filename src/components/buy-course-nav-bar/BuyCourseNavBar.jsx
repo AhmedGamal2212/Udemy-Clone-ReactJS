@@ -30,39 +30,37 @@ function BuyCourseNavBar({details}) {
 
     const {title, rating, num_subscribers: subscribers} = details;
 
-    return (
-        <div
-            id='buyBar'
-            className={hidden ? styles.hide : styles.bar}
-        >
-            <div className={styles.barContent}>
-                <div className={styles.barLeftContent}>
-                    <p className={styles.courseTitle}>{title}</p>
-                    <span>
+    return (<div
+        id='buyBar'
+        className={hidden ? styles.hide : styles.bar}
+    >
+        <div className={styles.barContent}>
+            <div className={styles.barLeftContent}>
+                <p className={styles.courseTitle}>{title}</p>
+                <span>
 						<StarsRating rating={rating}/>{' '}
-                        <span className={styles.ratingDetails}>
+                    <span className={styles.ratingDetails}>
 							<span className={styles.numOfRatings}>
 								(3,322 ratings)
 							</span>{' '}
-                            {subscribers} students
+                        {subscribers} students
 						</span>
 					</span>
+            </div>
+            <div className={styles.barRightContent}>
+                <div className={styles.price}>
+                    <span className={styles.newPrice}>E£199.99</span>
+                    <span className={styles.oldPrice}>E£679.99</span>
                 </div>
-                <div className={styles.barRightContent}>
-                    <div className={styles.price}>
-                        <span className={styles.newPrice}>E£199.99</span>
-                        <span className={styles.oldPrice}>E£679.99</span>
-                    </div>
-                    <button
-                        type='button'
-                        className={styles.buyNowButton}
-                    >
-                        Buy now
-                    </button>
-                </div>
+                <button
+                    type='button'
+                    className={styles.buyNowButton}
+                >
+                    Buy now
+                </button>
             </div>
         </div>
-    );
+    </div>);
 }
 
 export default BuyCourseNavBar;
