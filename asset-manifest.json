@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Udemy-Clone-ReactJS/static/css/main.4a0e8652.css",
-    "main.js": "/Udemy-Clone-ReactJS/static/js/main.b7031632.js",
+    "main.js": "/Udemy-Clone-ReactJS/static/js/main.158d39b6.js",
     "static/js/787.7fbb78d4.chunk.js": "/Udemy-Clone-ReactJS/static/js/787.7fbb78d4.chunk.js",
     "index.html": "/Udemy-Clone-ReactJS/index.html",
     "main.4a0e8652.css.map": "/Udemy-Clone-ReactJS/static/css/main.4a0e8652.css.map",
-    "main.b7031632.js.map": "/Udemy-Clone-ReactJS/static/js/main.b7031632.js.map",
+    "main.158d39b6.js.map": "/Udemy-Clone-ReactJS/static/js/main.158d39b6.js.map",
     "787.7fbb78d4.chunk.js.map": "/Udemy-Clone-ReactJS/static/js/787.7fbb78d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a0e8652.css",
-    "static/js/main.b7031632.js"
+    "static/js/main.158d39b6.js"
   ]
 }
