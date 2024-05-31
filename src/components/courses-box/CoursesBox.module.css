@@ -32,13 +32,13 @@
     background-color: whitesmoke;
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px) {
     .description {
         font-size: 1.5rem;
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
     .wrapper {
         padding: 4rem;
     }

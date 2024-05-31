@@ -1,6 +1,6 @@
 .mainContainer {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -9,27 +9,27 @@
 }
 
 .averageRating {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .rating {
-	font-size: 5rem;
-	font-weight: 900;
-	color: #b4690e;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #b4690e;
 }
 
 .stars {
-	display: none;
+    display: none;
 }
 
 .courseRating {
-	font-size: 1.5rem;
-	margin: 0;
-	padding-top: 4rem;
-	padding-left: 0.5rem;
-	color: #b4690e;
-	font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    color: #b4690e;
+    font-weight: 700;
 }
 
 .ratingDistribution {
@@ -40,24 +40,24 @@
 }
 
 @media only screen and (min-width: 600px) {
-	.mainContainer {
-		flex-direction: row;
-	}
+    .mainContainer {
+        flex-direction: row;
+    }
 
-	.averageRating {
-		flex-direction: column;
-	}
+    .averageRating {
+        flex-direction: column;
+    }
 
-	.rating {
-		margin: 0;
-	}
+    .rating {
+        margin: 0;
+    }
 
-	.stars {
-		display: initial;
-	}
+    .stars {
+        display: initial;
+    }
 
-	.courseRating {
-		padding: 0;
-		font-size: 1.2rem;
-	}
+    .courseRating {
+        padding: 0;
+        font-size: 1.2rem;
+    }
 }

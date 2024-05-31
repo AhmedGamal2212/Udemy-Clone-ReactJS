@@ -79,8 +79,8 @@
     display: none;
 }
 
-@media only screen and (min-width: 1080px){
-    .mainContainer{
+@media only screen and (min-width: 1080px) {
+    .mainContainer {
         display: initial;
     }
 }

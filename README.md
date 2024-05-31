@@ -1,6 +1,10 @@
 # Udemy-Clone-ReactJS
 
-This is a project that aims to clone the Udemy website using ReactJS as the main framework for building user interfaces. It is a learning project that showcases how to use various React features and libraries such as React Router, React Bootstrap and React Icons to create a dynamic and responsive web application that mimics the functionality and design of the original website. The project also focuses on building more complex UI components using CSS modules, which are a way of modularizing and scoping CSS styles to specific components, avoiding conflicts and improving maintainability.
+This is a project that aims to clone the Udemy website using ReactJS as the main framework for building user interfaces.
+It is a learning project that showcases how to use various React features and libraries such as React Router, React
+Bootstrap and React Icons to create a dynamic and responsive web application that mimics the functionality and design of
+the original website. The project also focuses on building more complex UI components using CSS modules, which are a way
+of modularizing and scoping CSS styles to specific components, avoiding conflicts and improving maintainability.
 
 ## Features
 
@@ -26,7 +30,8 @@ This is a project that aims to clone the Udemy website using ReactJS as the main
 
 To run this project locally, you need to have Node.js and npm installed on your machine. Then follow these steps:
 
-1. Clone this repository to your local machine using `git clone https://github.com/AhmedGamal2212/Udemy-Clone-ReactJS.git`
+1. Clone this repository to your local machine
+   using `git clone https://github.com/AhmedGamal2212/Udemy-Clone-ReactJS.git`
 2. Navigate to the project directory using `cd Udemy-Clone-ReactJS`
 3. Install the dependencies using `npm install`
 4. Start the development server using `npm start`
@@ -34,7 +39,8 @@ To run this project locally, you need to have Node.js and npm installed on your 
 
 ## Deployment
 
-To deploy this project to GitHub Pages, you need to have a GitHub account and a repository for this project. Then follow these steps:
+To deploy this project to GitHub Pages, you need to have a GitHub account and a repository for this project. Then follow
+these steps:
 
 1. Add your repository name to the `homepage` field in the `package.json` file
 2. Install the `gh-pages` package using `npm install --save gh-pages`
